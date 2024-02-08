@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <title>Product - Bento Bliss</title>
+  
+  <!-- CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/product.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- This is a JS code for burger functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.burger-button').addEventListener('click', function() {
+            var navLinks = document.querySelector('.mobile-nav-links');
+            navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
+        });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header-box">
+      <img class="logo" src="assets/img/logo.png" alt="This is a logo of Bento Bliss">
+      <h1 class="main-h1">Bento Bliss</h1>
+      
+      <nav class="main-nav">  
+        <a class="nav-text" id="shop" href=#>Shop</a>
+        <a class="nav-text" href=#>About</a>
+        <a class="nav-text" href=#>Contact</a>
+        <a class="nav-text" href="#"><i class="fa fa-shopping-cart"></i></a>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="burger-menu">
+        <button class="burger-button"> ☰ </button>
+        <div class="mobile-nav-links">
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a class="nav-text" href="#"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-banner">
+      <h1 class="headings">Find a Bento Cake for You!</h1>
+    </div>
+  </header>
+  
+  <section id="main">
+    <div class="product-grid">
+      <div class="product-box">
+        <img src="assets/img/dog-cake.png" class="product-img" alt="Dog Cake">
+        <div class="product-info">
+          <h2 class="product-text">Bento Cake "Puppy Love"</h2>
+          <h3>45.00 CAD$</h3>
+          <p class="product-text">Introducing our adorable "Puppy Love" Bento Cake, a delightful treat that combines the pristine elegance of white icing with the charm of a sweet dog face on top.</p>
+          <div class="product-buttons">
+            <a href="#" class="submit-button">View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-box">
+        <img src="assets/img/green-bday-cake.png" class="product-img" alt="BDay Cake">
+        <div class="product-info">
+          <h2 class="product-text">Bento Cake "Green Birthday"</h2>
+          <h3>40.00 CAD$</h3>
+          <p class="product-text">Presenting our "Green Birthday" Cake featuring a pastel green exterior adorned with daisy flowers, creating a visually stunning masterpiece.</p>
+          <div class="product-buttons">
+            <a href="#" class="submit-button">View Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-box">
+        <img src="assets/img/heart-cake.png" class="product-img" alt="Heart Cake">
+        <div class="product-info">
+          <h2 class="product-text">Bento Cake "Valentine Dream"</h2>
+          <h3>40.00 CAD$</h3>
+          <p class="product-text">Indulge in the romantic allure of our heart-shaped "Valentine Dream" Bento Cake, specially crafted for the season of love and romance!</p>
+          <div class="product-buttons">
+            <a href="#" class="submit-button">View Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>

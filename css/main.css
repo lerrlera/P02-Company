@@ -1,0 +1,602 @@
+/*
+  STYLE GUIDE STYLING 
+  main styling for the style guide 
+*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FEFCF8;
+  margin: 0;
+}
+
+#main {
+  padding: 4rem 7rem;
+}
+
+.banner {
+  margin: 0;
+  height:27vw;
+  padding: 0 7rem;
+}
+
+.banner p {
+  color: #3C3C3C;
+  max-width: 60%;
+}
+
+.element {
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #FFC700;
+}
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  font-size: 4.4rem;
+}
+
+h2 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #91B38E;
+  margin-bottom: 1.3%;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #3C3C3C;
+}
+
+h4 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #91B38E;
+  margin-top: 2.3%;
+  margin-bottom: 1.7%;
+}
+
+p {
+  margin: 0;
+  color: #3C3C3C;
+  max-width: 75%;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.6rem;
+  display: block;
+  color:#8f8f98;
+  max-width: 70%;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.logo {
+  max-width: 100%;
+  width: 5%;
+  height: auto;
+  margin-right: 1%;
+  margin-top: 0;
+}
+
+.main-h1 {
+  flex: 1;
+  margin: 0;
+  color: #FFBD15;
+  font-size: 2rem;
+  padding-top: 0.5%;
+}
+
+.main-h2 {
+  font-size: 4rem;
+  margin-bottom: 2%;
+  color: #3C3C3C;
+  padding-top: 12%;
+}
+
+/* Mobile burger menu */
+.burger-button {
+   color: #FFBD15;
+   padding: 2%;
+   font-size: 3.5rem;
+   cursor: pointer;
+   display: none;
+   border: none;
+   background-color: #FEFCF8;
+}
+
+.mobile-nav-links {
+   display: none;
+   background-color: #91B38E;
+   color: white;
+   position: absolute;
+   z-index: 1;
+   padding: 5% 4%;
+   max-width: 80%;
+   width: 80%;
+   right: 5%;
+   top: 16%;
+   text-align: center;
+}
+
+.mobile-nav-links a {
+   display: block;
+   padding: 5%;
+   color: white;
+   text-decoration: none;
+   font-size: 1.3rem;
+}
+
+.mobile-nav-links a:hover {
+   color: #FFBD15;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+.section-intro {
+  margin-bottom: 4%;
+}
+
+/* Styling for the in-text link */
+.text-link {
+  color: #FFBD15;
+  transition: color 0.4s ease;
+}
+
+.text-link:hover,
+.text-link:focus {
+  text-decoration: none;
+  color: #FFCD4D;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  color: #3C3C3C;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #FFBD15;
+}
+
+/* Styling for the submit button */
+.submit-button {
+  margin-top: 5%;
+  width: 8%;
+  padding: 1% 5%;
+  background-color: #FFBD15;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.submit-button:hover, .submit-button:focus {
+  text-decoration: none;
+  background-color: #FAE178;
+  color: #CF9A13;
+}
+
+/* Styling for the reset button */
+.reset-button {
+  margin-top: 5%;
+  width: 8%;
+  padding: 1% 5%;
+  border: 1px solid #FFBD15;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #FFBD15;
+  transition: background-color 0.5s ease;
+}
+
+.reset-button:hover, .reset-button:focus {
+  text-decoration: none;
+  background-color: #FAE178;
+  color: #CF9A13;
+}
+
+/* Styling for the input and label */
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-label {
+  font-size: 0.8rem;
+}
+
+#entertext {
+  max-width: 15%;
+  border-radius: 5px;
+  border: 1px solid #8f8f98;
+  padding: 1%;
+}
+
+#entertext:hover, #entertext:focus  {
+  border: 1px solid #FFBD15;
+  outline: none; 
+}
+
+/* Styling for the radio button */
+.radio-text {
+  margin-bottom: 1%;
+}
+
+#cake {
+  margin-right: 2%;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  accent-color: black;
+}
+
+/* Styling for the image */
+.cakes {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.img-link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden; 
+  max-width: 40%;
+}
+
+.img-link:hover, .img-link:focus {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+.text-el {
+  margin-top: 4%;
+}
+
+/* Styling for the headings */
+h1.headings {
+  font-size: 4rem;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+h2.headings {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+h3.headings {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1.3%;
+}
+
+h4.headings {
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+#combined_elements h2 {
+  margin-top: 4%;
+}
+
+/* Styling for the main navigation */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  gap: 10%;
+  flex: 2;
+  justify-content: flex-end;
+
+}
+
+.main-nav a{
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #3C3C3C;
+  text-decoration: none;
+  transition: color 0.5s;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.main-nav a:hover,.main-nav a:focus {
+  color: #FFBD15;
+}
+.sub-nav .sub-nav-button:hover {
+    color: #FFBD15;
+}
+
+.sub-nav .sub-nav-button {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  transition: color 0.5s;
+  color: #3C3C3C;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.sub-nav .sub-nav-button i {
+  margin-left: 5px; 
+}
+
+.sub-nav-content {
+  display: none;
+  max-width: 100%;
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  padding: 1% 0.5%;
+}
+
+.sub-nav-content a {
+  color: #FEFCF8;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 6% 6%;
+}
+
+.sub-nav-content a:hover {
+  color: #FFBD15;
+}
+.sub-nav:hover .sub-nav-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #91B38E;
+}
+
+/* Styling for the product listing */
+.product-box {
+  display: flex;
+  flex-direction: column;
+      box-sizing: border-box;
+
+}
+
+.product-img {
+  max-width: 45%;
+  border-radius: 5px;
+}
+
+.product-text {
+  max-width: 45%;
+  margin-bottom: 3%;
+}
+
+.product-buttons .submit-button {
+  width: 17%;
+  padding: 1.2% 4%;
+}
+
+/* Styling for the payment form */
+.payment-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-box {
+  margin-top: 1%;
+}
+
+.payment-text {
+  color: #C2C2C2;
+  margin-top: 0;
+}
+
+.payment-el {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1%;
+}
+
+.payment-el label {
+  font-size: 0.8rem;
+}
+
+.payment-el input {
+  max-width: 30%;
+  border-radius: 5px;
+  border: 1px solid #8f8f98;
+  padding: 1%;
+}
+
+.payment-el input:hover, .payment-el input:focus  {
+  border: 1px solid #FFBD15;
+  outline: none; 
+}
+
+.method {
+  margin-top: 2%;
+  margin-bottom: 1.4%;
+}
+
+.credit {
+  margin-bottom: 0.5%;
+}
+
+.payment-el input[type="radio"] {
+  margin-right: 1%;
+}
+
+.payment-el .submit-button {
+  width: 8%;
+  margin-top: 3%;
+}
+
+/* Styling for the checkout cart */
+.cart {
+  margin-bottom: 2%;
+  color: #3C3C3C;
+}
+.checkout-box {
+  display: flex;
+  flex-direction: row;
+}
+.checkout-box img {
+  max-width: 100%;
+  width: 20%;
+  height: auto;
+  margin-right: 2%;
+  border-radius: 5px;
+}
+
+.checkout-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-description {
+  color: #C2C2C2;
+  font-size: 0.8rem;
+}
+
+.checkout-button {
+  margin-top: 5%;
+}
+
+/* 
+  BRANDING IDEAS -------------------
+*/
+#branding_ideas h2 {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#branding_ideas p {
+  margin-bottom: 3%;
+}
+
+.brand-headings {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+#brand_components h1 {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+h2.brand-components {
+  margin-top: 5%;
+}
+
+.brand-p {
+  margin-bottom: 3%;
+}
+
+.color-palette {
+  margin-top: 5%;
+}
+
+.white-cream {
+  padding: 4%;
+  background-color: #FEFCF8;
+  border: 1px solid black;
+}
+
+.orange-yellow {
+  margin-top: 2%;
+  padding: 4%;
+  background-color: #FFBD15;
+  border: 1px solid black;
+}
+
+.pastel-green {
+  margin-top: 2%;
+  padding: 4%;
+  background-color: #91B38E;
+  border: 1px solid black;
+}
+
+.grey-black {
+  margin-top: 2%;
+  padding: 4%;
+  background-color: #3C3C3C;
+  border: 1px solid black;
+  margin-bottom: 4%;
+}
+.grey-black p {
+  color: white;
+}
+
+.art-direction {
+  margin-top: 5%;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 4%;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 60em) {
+   .logo {
+    width: 10%;
+  }
+
+}
+
+@media screen and (max-width: 45em) {
+
+  #main {
+    padding: 3rem 3rem;
+  }
+
+  .logo {
+    width: 15%;
+  }
+  .header-box {
+    padding: 1rem 2rem;
+  }
+  .mobile-nav-links a {
+    padding: 7%;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  .burger-button {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+  }
+
+}
+

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bento Bliss - Style Guide</title>
+  
+  <!-- CSS -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-box">
+      
+      <img class="logo" src="assets/img/logo.png" alt="This is a logo of Bento Bliss">
+      
+      <h1 class="main-h1">Bento Bliss</h1>
+      
+      <nav class="main-nav">  
+        <div class="sub-nav">
+          <button class="sub-nav-button">Elements <i class="fa fa-caret-down"></i></button>
+          <div class="sub-nav-content">
+            <a href="#interactive_elements">Interactive</a>
+            <a href="#text_elements">Text</a>
+            <a href="#combined_elements">Combined</a>
+          </div>
+        </div>
+        <div class="sub-nav">
+          <button class="sub-nav-button">Branding <i class="fa fa-caret-down"></i></button>
+          <div class="sub-nav-content">
+            <a href="#branding_ideas">Ideas</a>
+            <a href="#brand_components">Components</a>
+          </div>
+        </div>
+          <div class="sub-nav">
+          <button class="sub-nav-button">Templates <i class="fa fa-caret-down"></i></button>
+          <div class="sub-nav-content">
+            <a href="product.html">Product</a>
+            <a href="checkout.html">Checkout</a>
+          </div>
+        </div>
+        <a class="nav-text" href="#citations">Citations</a>
+       
+        <!--
+           <a class="nav-text" href="#interactive_elements">Interactive Elements</a>
+        <a class="nav-text" href="#text_elements">Text Elements</a>
+
+        <a class="nav-text" href="#combined_elements">Combined Elements</a>
+        <a class="nav-text" href="#branding_ideas">Branding</a>
+        <a class="nav-text" href="#citations">Citations</a>-->
+      </nav>
+    </div>
+
+    <div class="banner">
+    <h2 class="main-h2">Style Guide</h2>
+    <p>This style guide illustrates Bento Bliss's brand direction in terms of web elements, basic branding ideas, branding components, art direction and responsive template structures. Please use the main navigation to view other sections or pages.</p>
+
+  </div>
+
+  </header>
+
+  <section id="main">
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
+    <p class="section-intro">This section includes all interactive elements including in-text links, navigation links,buttons, text inputs and labels, radio buttons and images as links.</p>
+
+    <!-- In-Text Link section -->
+    <section class="element">
+      <h3>In-Text Link</h3>
+      <h4>CSS selector:</h4>
+      <p>.text-link</p>
+      <h4>Sample code:</h4>
+      <code>&lt;p&gt;Check out our &lt;a class ="text-link" href="https://www.pinterest.ca/"&gt;new cake selection&lt;/a&gt; for this season!&lt;/p&gt;</code>
+      <h4>Rendered element:</h4>
+      <p>Check out our <a class ="text-link" href="https://www.pinterest.ca/">new cake selection</a> for this season!</p>
+    </section>
+
+    <!-- Navigation Link section -->
+    <section class="element">
+      <h3>Navigation Link</h3>
+      <h4>CSS selector:</h4>
+      <p>.button-nav</p>
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button-nav"&gt;Contact&lt;/a&gt;</code>
+      <h4>Rendered element:</h4>
+      <a class="button-nav" href="#">Contact</a>
+    </section>
+      
+    <!-- Submit Button section -->
+    <section class="element">
+      <h3>Submit Button</h3>
+      <h4>CSS selector:</h4>
+      <p>.submit-button</p>
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="submit-button"&gt;Submit&lt;/a&gt;</code>
+      <h4>Rendered element:</h4>
+      <a href="#" class="submit-button">Submit</a>
+    </section>
+
+    <!-- Reset Button section -->
+    <section class="element">
+      <h3>Reset Button</h3>
+      <h4>CSS selector:</h4>
+      <p>.reset-button</p>
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="reset-button"&gt;Reset&lt;/a&gt;</code>
+      <h4>Rendered element:</h4>
+      <a href="#" class="reset-button">Reset</a>
+    </section>
+
+    <!-- Text Input Field with Label section -->
+    <section class="element">
+      <h3>Text Input Field with Label</h3>      
+      <h4>CSS selector:</h4>
+      <p>.text-label</p>
+      <p>#entertext</p>
+      <h4>Sample code:</h4>
+      <code>&lt;div class="input-box"&gt;<br>&lt;label class="text-label"&gt;Enter text:&lt;/label&gt;<br>
+      &lt;input id="entertext" type="text"&gt;<br>&lt;/div&gt;</code>
+      <h4>Rendered element:</h4>
+      <div class="input-box">
+        <label class="text-label">Your First Name</label>
+        <input placeholder="First Name" id="entertext" type="text">
+      </div>
+    </section>
+
+    <!-- Radio Button with Label section -->
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+      <h4>CSS selector:</h4>
+      <p>.radio-text</p>
+      <p>#cake</p>
+      <p>input[type="radio"]</p>
+      <h4>Sample code:</h4>
+      <code>&lt;p class="radio-text"&gt;Would you like to add a custom writing on a cake?&lt;/p&gt;
+      <br>&lt;input type="radio" id="cake"&gt;
+      <br>&lt;label for="cake"&gt;Yes&lt;/label&gt;</code>
+        
+      <h4>Rendered element:</h4>
+      <p class="radio-text">Would you like to add a custom writing on a cake?</p>
+      <input type="radio" id="cake">
+      <label for="cake">Yes</label>
+    </section>
+
+    <!-- Image as a Link section -->
+    <section class="element">
+      <h3>Image as a Link</h3>
+      <h4>CSS selector:</h4>
+      <p>.img-link</p>
+      <p>.img-link</p>
+      <h4>Sample code:</h4>
+      <code>&lt;a class="img-link" href="#"&gt;<br>
+      &lt;img class="cakes" src="assets/img/bento-cakes.jpeg" alt="This is a bento cake collection!"&gt;
+      <br>&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <a class="img-link" href="#">
+        <img class="cakes" src="assets/img/bento-cakes.jpeg" alt="This is a bento cake collection!">
+      </a>
+    </section>
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2 class="text-el">Text Elements</h2>
+
+    <!-- Headings section -->
+    <section class="element">
+      <h3>Headings</h3>
+      <h4>CSS selector:</h4>
+      <p>.headings</p>
+      <p>h1</p>
+      <p>h2</p>
+      <p>h3</p>
+      <p>h4</p>
+      <h4>Sample code:</h4>
+      <code>&lt;h1 class="headings"&gt;Heading 1&lt;/h1&gt;<br>
+          &lt;h2 class="headings"&gt;Heading 2&lt;/h2&gt;<br>
+          &lt;h3 class="headings"&gt;Heading 3&lt;/h3&gt;<br>
+          &lt;h4 class="headings"&gt;Heading 4&lt;/h4&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <h1 class="headings">Heading 1</h1>
+      <h2 class="headings">Heading 2</h2>
+      <h3 class="headings">Heading 3</h3>
+      <h4 class="headings">Heading 4</h4>
+    </section>
+      
+    <!-- Paragraphs section -->
+    <section class="element">
+      <h3>Paragraphs</h3>
+      <h4>CSS selector:</h4>
+      <p>p</p>
+      <h4>Sample code:</h4>
+      <code>
+        &lt;p&gt;Bento cakes are miniature confections inspired by traditional Japanese bento boxes. Comprising layers of sponge cake, cream, and various fillings, these treats offer a delightful fusion of flavours and textures in each bite.&lt;/p&gt;
+      </code>
+      <h4>Rendered element:</h4>
+      <p>Bento cakes are miniature confections inspired by traditional Japanese bento boxes. Comprising layers of sponge cake, cream, and various fillings, these treats offer a delightful fusion of flavours and textures in each bite.</p>
+    </section>
+      
+    <!-- Numbered Lists section -->
+    <section class="element">
+        
+      <h3>Numbered Lists</h3>
+      <h4>CSS selector:</h4>
+      <p>ol</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;ol&gt;
+        <br>
+        &lt;li&gt;Birthday Cake&lt;/li&gt;<br>
+        &lt;li&gt;Valentine Cake&lt;/li&gt;<br>
+        &lt;li&gt;Anniversary Cake&lt;/li&gt;<br>
+        &lt;ol&gt;<br>
+      </code>
+
+      <h4>Rendered element:</h4>
+      <ol>
+        <li>Birthday Cake</li>
+        <li>Valentine Cake</li>
+        <li>Anniversary Cake</li>
+      </ol>
+    </section>
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
+
+    <!-- Main Nav section -->
+    <section class="element">
+      <h3>Main Navigation</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.nav-text</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;div class="main-nav"&gt;<br>
+        &lt;a href="#" class="nav-text"&gt;Shop&lt;/a&gt;<br>
+        &lt;a href="#" class="nav-text"&gt;About Us&lt;/a&gt;<br>
+        &lt;a href="#" class="nav-text"&gt;Contact&lt;/a&gt;<br>
+        &lt;/div&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <div class="main-nav">
+        <a href="#" class="nav-text">Shop</a>
+        <a href="#" class="nav-text">About Us</a>
+        <a href="#" class="nav-text">Contact</a>
+      </div>
+    </section>
+
+    <!-- Product Listing section -->
+    <section class="element">
+      <h3>Product Listing</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.product-img</p>
+      <p>.product-text</p>
+      <p>.button-cart</p>
+      <p>#cake-filling</p>
+      <p>.product-box</p>
+      <p>.product-info</p>
+      <p>.product-buttons</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;div class="product-box"&gt;<br>
+        &lt;img src="assets/img/dog-cake.png" class="product-img" alt="Dog Cake"&gt;<br>
+        &lt;div class="product-info"&gt;<br>
+        &lt;h2 class="product-text"&gt;Bento Cake "Puppy Love"&lt;/h2&gt;<br>
+        &lt;h3&gt;40.00 CAD$&lt;/h3&gt;<br>
+        &lt;p class="product-text"&gt;
+        Introducing our adorable "Puppy Love" Bento Cake, a delightful treat that combines the pristine elegance of white icing with the charm of a sweet dog face on top.
+        &lt;/p&gt;<br>
+        &lt;div class="product-buttons"&gt;<br>
+        &lt;a href="#" class="submit-button"&gt;View Product&lt;/a&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+      </code>
+
+      <h4>Rendered element:</h4>
+      <div class="product-box">
+        <img src="assets/img/dog-cake.png" class="product-img" alt="Dog Cake">
+        <div class="product-info">
+          <h2 class="product-text">Bento Cake "Puppy Love"</h2>
+          <h3>40.00 CAD$</h3>
+          <p class="product-text">Introducing our adorable "Puppy Love" Bento Cake, a delightful treat that combines the pristine elegance of white icing with the charm of a sweet dog face on top. </p>
+          <div class="product-buttons">
+            <a href="#" class="submit-button">View Product</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Form section -->
+    <section class="element">
+      <h3>Payment Form</h3>
+      <h4>CSS selector:</h4>
+      <p>form</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;h3&gt;Payment&lt;/h3&gt;<br>
+        &lt;p class="payment-text"&gt;All transactions are secure and encrypted.&lt;/p&gt;<br>
+        &lt;div class="payment-el"&gt;<br>
+        &lt;p class="method"&gt;&lt;strong&gt;Payment Method:&lt;/strong&gt;&lt;/p&gt;<br>
+        &lt;div class="credit"&gt;<br>
+          &lt;input type="radio" id="creditCard" name="paymentMethod" value="creditCard"&gt;<br>
+          &lt;label for="creditCard"&gt;Credit Card&lt;/label&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="debit"&gt;<br>
+          &lt;input type="radio" id="debitCard" name="paymentMethod" value="debitCard"&gt;<br>
+          &lt;label for="debitCard"&gt;Debit Card&lt;/label&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;form&gt;<br>
+          &lt;div class="payment-box"&gt;<br>
+            &lt;div class="payment-el"&gt;<br>
+              &lt;label for="cardholderName"&gt;Cardholder Name:&lt;/label&gt;<br>
+              &lt;input placeholder="Cardholder Name" type="text" id="cardholderName"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="payment-el"&gt;<br>
+              &lt;label for="cardNumber"&gt;Card Number:&lt;/label&gt;<br>
+              &lt;input type="text" placeholder="Card Number" id="cardNumber"&gt;<br>
+            &lt;/div&gt;
+
+            &lt;div class="payment-el"&gt;<br>
+              &lt;label for="expiryDate"&gt;Expiry Date:&lt;/label&gt;<br>
+              &lt;input type="text" id="expiryDate" placeholder="MM/YYYY"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="payment-el"&gt;<br>
+              &lt;label for="cvv"&gt;CVV:&lt;/label&gt;<br>
+              &lt;input type="text" placeholder="CVV" id="cvv"&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="payment-el"&gt;<br>
+
+            &lt;div class="payment-el"&gt;<br>
+              &lt;a class="submit-button"&gt;Place Order&lt;/a&gt;<br>
+            &lt;/div&gt;<br>
+
+          &lt;/div&gt;<br>
+      &lt;/form&gt;<br>
+
+      </code>
+
+      <h4>Rendered element:</h4>
+
+      <h3>Payment</h3>
+      <p class="payment-text">All transactions are secure and encrypted.</p>
+      <!-- method -->
+      <div class="payment-el">
+        <p class="method"><strong>Payment Method:</strong></p>
+        <div class="credit">
+          <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+          <label for="creditCard">Credit Card</label>
+        </div>
+        <div class="debit">
+          <input type="radio" id="debitCard" name="paymentMethod" value="debitCard">
+          <label for="debitCard">Debit Card</label>
+        </div>
+      </div>
+      <form>
+        <div class="payment-box">
+        <!-- name -->
+          <div class="payment-el">
+            <label for="cardholderName">Cardholder Name:</label>
+            <input placeholder="Cardholder Name" type="text" id="cardholderName">
+          </div>
+
+          <!-- card -->
+          <div class="payment-el">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" placeholder="Card Number" id="cardNumber">
+          </div>
+
+          <!-- expiry date -->
+          <div class="payment-el">
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" placeholder="MM/YYYY">
+          </div>
+
+          <!-- CVV -->
+          <div class="payment-el">
+            <label for="cvv">CVV:</label>
+            <input type="text" placeholder="CVV" id="cvv">
+          </div>
+
+          <!-- button -->
+          <div class="payment-el">
+            <a class="submit-button">Place Order</a>
+          </div>
+
+        </div>
+      </form>
+    </section>
+
+    <!-- Checkout Cart section -->
+    <section class="element">
+      <h3>Checkout Cart</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.cart</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;h2 class="cart"&gt;Checkout Cart&lt;/h2&gt;<br>
+        &lt;div class="checkout-box"&gt;<br>
+        &lt;img src="assets/img/green-bday-cake.png"&gt;<br>
+        &lt;div class="checkout-text"&gt;<br>
+        &lt;div class="checkout-text-el"&gt;<br>
+        &lt;h4&gt;Product&lt;/h4&gt;<br>
+        &lt;p&gt;Bento Cake "Birthday"&lt;/p&gt;<br>
+        &lt;p class="checkout-description"&gt;A classy green Birthday cake decorated with flowers.&lt;/p&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="checkout-text-el"&gt;<br>
+        &lt;h4&gt;Quantity&lt;/h4&gt;<br>
+        &lt;p&gt;1&lt;/p&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;div class="checkout-text-el"&gt;<br>
+        &lt;h4&gt;Total Price&lt;/h4&gt;<br>
+        &lt;p&gt;40.00 CAD$&lt;/p&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+         &lt;/div&gt;<br>
+        &lt;div class="checkout-button"&gt;<br>
+        &lt;a href="#" class="submit-button"&gt;Place Order&lt;/a&gt;<br>
+        &lt;/div&gt;
+
+
+      </code>
+
+      <h4>Rendered element:</h4>
+
+      <h2 class="cart">Checkout Cart</h2>
+      <div class="checkout-box">
+          
+        <img src="assets/img/green-bday-cake.png" alt="Green Bento Cake">
+        <div class="checkout-text">
+          <div class="checkout-text-el">
+            <h4>Product</h4>
+            <p>Bento Cake "Birthday"</p>
+            <p class="checkout-description">A classy green Birthday cake decorated with flowers.</p>
+          </div>
+          <div class="checkout-text-el">
+            <h4>Quantity</h4>
+            <p>1</p>
+          </div>
+          <div class="checkout-text-el">
+            <h4>Total Price</h4>
+            <p>40.00 CAD$</p>
+          </div>
+        </div>
+      </div>
+      <div class="checkout-button">
+      <a href="#" class="submit-button">Place Order</a>
+    </div>
+
+    </section>
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+  <!-- // BRANDING IDEAS SECTION -->
+  <section id="branding_ideas">
+
+    <section class="element">
+
+      <h2>Branding Ideas</h2>
+      
+      <h3>About Bento Bliss</h3>
+      <p>Bento Bliss is a specialized cake shop that offers bento cakes for various occasions. The company provides a unique experience for customers looking to celebrate special moments. Bento Bliss crafts aesthetically pleasing cakes with high-quality ingredients, offering a diverse range of fillings and custom artwork to meet the individual preferences and themes of its customers.</p>
+
+      <h3>Why Choose Bento Bliss?</h3>
+      <p>Bento Bliss is enticing for its innovative bento cake concept, use of high-quality ingredients, versatile size options, and a user-friendly website that enhances the overall customer experience. The website not only allows customers to explore the diverse range of cakes but also facilitates simple online ordering, ensuring a seamless and convenient process. Moreover, the website's design aligns with the aesthetic of Bento Bliss cakes, providing customers with a visually cohesive and enjoyable browsing experience.</p>
+
+      <h3>Target Audience</h3>
+      <p>To potential customers, Bento Bliss is like a skilled artisan chef with a flair for creativity and customization. It's the go-to person for those seeking a memorable and visually stunning cake experience. Bento Bliss is enticing because it offers small lunchbox cakes for any taste and occasion. Whether it's a birthday, anniversary, or Valentine's Day, Bento Bliss cakes are a perfect treat for an intimate celebration.</p>
+
+      <h3>Quick Personas</h3>
+      <h4><strong>Jenny</strong></h4>
+      <p>Jenny (22 y.o.) and her boyfriend's anniversary is coming up soon, so she is looking for a smaller cake for just the two of them. Jenny enjoys more intimate celebrations.</p>
+
+      <h4><strong>Kelly</strong></h4>
+      <p>Kelly (30 y.o.) has a lot of close friends, so she frequently celebrates birthdays and other special events. Kelly loves buying cakes as gifts, so cake customization plays an important role for her.</p>
+    </section>
+  </section>
+  <!-- // BRANDING IDEAS SECTION -->
+
+  <!-- // BRAND COMPONENTS SECTION -->
+  <section id="brand_components">
+    <section class="element">
+      <h2 class="brand-components">Brand Components</h2>
+      
+      <h3>Typography</h3>
+      <h1 class="headings">Heading 1 - Josefin Slab Bold</h1>
+      <h2 class="brand-headings">Heading 2 - Josefin Slab 700</h2>
+      <h3 class="headings">Heading 3 - Josefin Slab Bold</h3>
+      <h4 class="headings">Heading 4 - Josefin Slab Bold</h4>
+
+      <p class="brand-p">Paragraph - Poppins Regular</p>
+    </section>
+      
+    <section class="element">
+
+      <h3 class="color-palette">Colour Palette</h3>
+      <div class="white-cream"><p>White Cream: #FEFCF8</p></div>
+      <div class="orange-yellow"><p>Orange Yellow: #FFBD15</p></div>
+      <div class="pastel-green"><p>Pastel Green: #91B38E</p></div>
+      <div class="grey-black"><p>Grey Black: #3C3C3C</p></div>
+    </section>
+    <section class="element">
+
+      <h3 class="art-direction">Art Direction</h3>
+      <div class="image-grid">
+        <img src="assets/img/cream.jpg" alt="Cream Image">
+        <img src="assets/img/dog-cake.png" alt="Dog Cake">
+        <img src="assets/img/room.jpg" alt="Room Image">
+        <img src="assets/img/heart-cake.png" alt="Heart Cake">
+        <img src="assets/img/art.jpg" alt="Art Graphic">
+        <img src="assets/img/boy-bday-cake.png" alt="Boy Cake">
+        <img src="assets/img/flowers.jpg" alt="Flowers in Vases">
+        <img src="assets/img/mom-cake.png" alt="Mom Cake">
+      </div>
+    </section>
+  </section>
+  <!-- // BRAND COMPONENTS SECTION -->
+
+  <section id="citations">
+    <h2>Citations</h2>
+
+    <ul>
+      <li>W3 Schools. Retrieved from <a href="https://www.w3schools.com/html/">w3schools.com</a></li>
+      <li>Grids. Retrieved from <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Tricks</a></li>
+      <li>Radio Button Scale. Retrieved from <a href="https://codepen.io/b_atish/pen/RwrOJP">codepen.io</a></li>
+      <li>Flex Box CSS. Retrieved from <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com</a></li>
+      <li>Burger Menu. Retrieved from <a href="https://reintech.io/blog/creating-hamburger-menu-css-tutorial">reintech.io</a></li>
+      <li>Style Radio Buttons. Retrieved from <a href="https://bryntum.com/blog/3-ways-to-style-radio-buttons-with-modern-css/">bryntum.com</a></li>
+      <li>Bento Cakes Image. Retrieved from <a href="https://twitter.com/fxthema/status/1367584547609616386">twitter.com</a></li>
+      <li>Cream Image. Retrieved from <a href="https://www.pinterest.ca/pin/725290715018836666/">Pinterest</a></li>
+      <li>Room Image. Retrieved from <a href="https://www.pinterest.ca/pin/2040762325117487/">Pinterest</a></li>
+      <li>Flowers Image. Retrieved from <a href="https://www.pinterest.ca/pin/750975306635961474/">Pinterest</a></li>
+      <li>Art Image. Retrieved from <a href="https://www.pinterest.ca/pin/212232201180445080/">Pinterest</a></li>
+      <li>BDay Cake Image. Retrieved from <a href="https://www.pinterest.ca/pin/1759287346534917/">Pinterest</a></li>
+      <li>Boy BDay Cake Image. Retrieved from <a href="https://www.pinterest.ca/pin/14988611252182877/">Pinterest</a></li>
+      <li>Dog Cake Image. Retrieved from <a href="https://www.pinterest.ca/pin/147492956540547684/">Pinterest</a></li>
+      <li>Mom Cake Image. Retrieved from <a href="https://www.pinterest.ca/pin/703687510532782293/">Pinterest</a></li>
+      <li>Green BDay Cake Image. Retrieved from <a href="https://www.pinterest.ca/pin/6262886975197338/">Pinterest</a></li>
+      <li>Love Cake Image. Retrieved from <a href="https://www.pinterest.ca/pin/693202567671088131/">Pinterest</a></li>
+      <li>Green Love Cake Image. Retrieved from <a href="https://www.pinterest.ca/pin/471681760988574136/">Pinterest</a></li>
+      <li>Heart Cake Image. Retrieved from <a href="https://www.pinterest.ca/pin/12103492741378344/">Pinterest</a></li>
+      <li>Bento Cakes Image. Retrieved from <a href=" https://chichisbakehouse.com.au/cdn/shop/files/3C9AF6F9-1CFE-45E2-AA2B-60A27E3BAB24.jpg?v=1699125314&width=1946">Chi Chi's Bake House</a></li>
+     
+    </ul>
+  </section>
+  </section>
+
+</body>
+</html>

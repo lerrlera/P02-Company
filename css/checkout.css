@@ -1,0 +1,120 @@
+/*
+  STYLE GUIDE STYLING 
+  checkout styling for the style guide 
+*/
+
+.headings {
+	text-align: center;
+	padding-top: 6%;
+}
+
+.checkout-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 15em;
+}
+
+.payment-form {
+	flex: 1;
+}
+
+.payment-form h3 {
+	margin-top: 0;
+}
+.checkout-cart {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.payment-el label {
+	font-size: 1rem;
+	margin-bottom: 1%;
+}
+
+.checkout-cart .payment-text {
+	max-width: 85%;
+	margin-bottom: 4%;
+}
+
+.payment-box .payment-el input {
+	max-width: 80%;
+	width: 70%;
+	height: 30px;
+	margin-bottom: 2%;
+}
+
+.method {
+	margin-top: 4%;
+	margin-bottom: 3%;
+}
+
+.debit {
+	margin-top: 1%;
+	margin-bottom: 4%;
+}
+
+.checkout-text {
+	margin-left: 5%;
+}
+
+.checkout-box img {
+  max-width: 100%;
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.checkout-button {
+	margin-top: 10%;
+	text-align: right;
+}
+
+@media screen and (max-width: 80em) {
+  .checkout-box img {
+  	width: 40%;
+  	height: 40%;
+  	max-height: 50%;
+  }
+
+  #main {
+  	 padding: 3rem 3rem;
+  }
+}
+
+@media screen and (max-width: 70em) {
+  .checkout-box img {
+  	width: 30%;
+  	height: 30%;
+  	max-height: 50%;
+  }
+
+}
+@media screen and (max-width: 60em) {
+  .checkout-container {
+    flex-direction: column; 
+  }
+
+  .payment-form {
+  	margin-left: 10%;
+  	margin-bottom: 30%;
+  }
+
+  .checkout-cart {
+  	margin-left: 10%;
+  }
+
+  .checkout-box {
+  	flex-direction: column;
+  }
+
+  .checkout-text {
+  	margin-left: 0;
+  }
+
+  .checkout-box img {
+  	width: 50%;
+  	height: 50%;
+  	max-height: 50%;
+  }
+}
