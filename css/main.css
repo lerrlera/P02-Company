@@ -586,6 +586,7 @@ h2.brand-components {
 @media screen and (max-width: 50em) {
   .burger-button {
     display: block;
+    margin-left: 50%;
   }
   .main-nav {
     display: none;
