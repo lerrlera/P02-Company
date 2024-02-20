@@ -19,13 +19,25 @@
 
   <!-- This is a JS code for burger functionality -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.querySelector('.burger-button').addEventListener('click', function() {
-            var navLinks = document.querySelector('.mobile-nav-links');
-            navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
-        });
+  document.addEventListener('DOMContentLoaded', function () {
+    // Function to toggle the visibility of the mobile nav links
+    function toggleMobileNavLinks() {
+      var navLinks = document.querySelector('.mobile-nav-links');
+      navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
+    }
+
+    // Event listener for the burger button
+    document.querySelector('.burger-button').addEventListener('click', function() {
+      toggleMobileNavLinks();
     });
-  </script>
+
+    // Event listener for the close button
+    document.querySelector('.close-button').addEventListener('click', function() {
+      toggleMobileNavLinks();
+    });
+  });
+</script>
+
 </head>
 
 <body>
@@ -44,6 +56,7 @@
       <div id="burger-menu">
         <button class="burger-button"> ☰ </button>
         <div class="mobile-nav-links">
+          <button class="close-button">&times;</button>
           <a href="#">Shop</a>
           <a href="#">About</a>
           <a href="#">Contact</a>
