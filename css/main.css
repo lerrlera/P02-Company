@@ -109,6 +109,12 @@ code {
    background-color: #FEFCF8;
 }
 
+#burger-menu {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+}
+
 .mobile-nav-links {
    display: none;
    background-color: #91B38E;
@@ -586,7 +592,6 @@ h2.brand-components {
 @media screen and (max-width: 50em) {
   .burger-button {
     display: block;
-    margin-left: 50%;
   }
   .main-nav {
     display: none;
