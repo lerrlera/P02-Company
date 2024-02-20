@@ -26,18 +26,18 @@
 
 .product-text {
 	max-width: 100%;
-	width: 80%;
 	margin-top: 8%;
 }
 
 .product-box {
 	display: flex;
-	padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 5%;
 	flex: 1 1 15em;
   border-radius: 10px;
   background-color: rgb(255, 189, 21,0.03);
+  padding: 2% 4%;
+  justify-content: center;
+  transition: background-color .25s linear;
+  margin-bottom: 2rem;
 }
 
 .product-box:hover {
@@ -59,12 +59,12 @@
 }
 
 .product-buttons .submit-button {
-    width: 17%;
     padding: 2% 7%;
 }
 
 .product-buttons {
-    margin-top: 9%;
+    margin-top: 15%;
+    text-align: right;
 }
 
 .product-img {
@@ -77,11 +77,11 @@
   flex: 1 1 15em;
   margin-bottom: 4%;
   margin-top: 5%;
-  gap: 5%;
+  gap: 4%;
 }
 
 .product-grid img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -90,6 +90,7 @@
   .product-box {
     max-width: calc(50% - 2.5%);
   }
+
 }
 
 
