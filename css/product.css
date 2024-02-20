@@ -26,23 +26,36 @@
 
 .product-text {
 	max-width: 100%;
-	width: 100%;
+	width: 80%;
 	margin-top: 8%;
 }
 
 .product-box {
 	display: flex;
-	padding-bottom: 5%;
+	padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
 	flex: 1 1 15em;
+  border-radius: 10px;
+  background-color: rgb(255, 189, 21,0.03);
+}
+
+.product-box:hover {
+  background-color: rgb(255, 189, 21,0.07);
 }
 
 .product-box h2 {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
+}
+
+.product-box p {
+  font-size: 0.9rem;
 }
 
 .product-box h3 {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	margin:0;
+  color: rgb(60, 60, 60,0.6);
 }
 
 .product-buttons .submit-button {
@@ -68,7 +81,7 @@
 }
 
 .product-grid img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
