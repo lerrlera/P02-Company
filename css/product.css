@@ -8,31 +8,16 @@
 	position: relative;
 	max-width: 100%;
 	width: 100%;
-	height: 15vw;
+	height: 5vw;
 	padding: 5% 0;
 	margin:0;
-	background-image: url('../assets/img/banner-cakes.png');
-	background-position: left;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-}
-
-/* overlay */
-.product-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(145, 179, 142, 0.8); 
 }
 
 .product-banner h1 {
 	text-align: center;
 	position: relative;
 	margin-top: 5%;
-	color: #FEFCF8;
+	color: #FBD26A;
 }
 
 #shop {
