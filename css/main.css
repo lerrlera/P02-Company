@@ -422,23 +422,54 @@ h4.headings {
 .product-box {
   display: flex;
   flex-direction: column;
-      box-sizing: border-box;
+  border-radius: 10px;
+  width: 40%;
+  max-width: 100%;
+  background-color: rgb(255, 189, 21,0.03);
+  padding: 2% 4%;
+  transition: background-color .25s linear;
+  margin-bottom: 2rem;
+}
 
+.product-box:hover {
+  background-color: rgb(255, 189, 21,0.07);
+}
+
+.product-box h2 {
+  font-size: 1.7rem;
+}
+
+.product-box p {
+  font-size: 0.9rem;
+  margin-bottom: 5%;
+}
+
+.product-box h3 {
+  font-size: 1.3rem;
+  margin:0;
+  color: rgb(60, 60, 60,0.6);
+  margin-bottom: 5%;
 }
 
 .product-img {
-  max-width: 45%;
+  max-width: 100%;
   border-radius: 5px;
 }
 
 .product-text {
-  max-width: 45%;
+  max-width: 100%;
   margin-bottom: 3%;
 }
 
 .product-buttons .submit-button {
   width: 17%;
+  margin-top: 15%;
   padding: 1.2% 4%;
+}
+
+
+.product-buttons {
+  text-align: right;
 }
 
 /* Styling for the payment form */
