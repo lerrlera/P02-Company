@@ -419,6 +419,8 @@ h4.headings {
 }
 
 /* Styling for the product listing */
+
+
 .product-box {
   display: flex;
   flex-direction: column;
