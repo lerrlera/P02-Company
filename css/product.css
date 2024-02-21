@@ -125,4 +125,12 @@
   	font-size: 2.5rem;
   }
 
+  .product-buttons {
+    margin-bottom: 5%;
+  }
+
+  .product-box {
+    margin-bottom: 8%;
+  }
+
 }
