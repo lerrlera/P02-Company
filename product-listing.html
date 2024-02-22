@@ -78,18 +78,21 @@
           <p>Please order at least <strong>24 HOURS</strong> in advance. Thanks for understanding!</p>
 
           <div class="inputs">
+
+             <div class="custom-select">
+              <label>Biscuit Type</label>
+              <select>
+                <option value="vanilla">Vanilla Milk</option>
+                <option value="chocolate">Chocolate Truffle</option>
+                <option value="yuzu">Yuzu Matcha</option>
+              </select>
+            </div>
+
             <div class="quantity">
               <label>Quantity</label>
               <input type="number" class="q-input" id="quantity" name="quantity" min="1" value="1">
             </div>
-            <div>
-              <label>Biscuit Type</label>
-              <select>
-                <option value="vanilla">Vanilla</option>
-                <option value="chocolate">Chocolate</option>
-                <option value="yuzu">Yuzu</option>
-              </select>
-            </div>
+          
           </div>
           <div class="product-buttons">
             <a href="#" class="submit-button">Add to Cart</a>
