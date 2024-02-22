@@ -77,13 +77,23 @@ select:hover, select:focus  {
 }
 
 .product-buttons {
-	margin-top: 5%;
-	display: flex;
-	justify-content: flex-end;
+	margin-top: 15%;
+	text-align: left;
 }
 
 @media screen and (max-width: 80em) {
 	.inputs {
-		
+		flex-direction: column;
 	}
+	.custom-select {
+		margin-bottom: 5%;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 70em) {
+	.product-listing-box {
+		flex-direction: column;
+	}
+	
 }
