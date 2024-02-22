@@ -17,6 +17,9 @@ h1.headings {
 
 .product-img {
 	margin-right: 6%;
+	max-width: 100%;
+	height: auto;
+	align-self: flex-start; 
 }
 
 .product-listing-info p {
@@ -89,11 +92,75 @@ select:hover, select:focus  {
 		margin-bottom: 5%;
 		width: 70%;
 	}
+
+	.product-listing-box p {
+		font-size: 0.9rem;
+	}
+	.product-listing-box h1 {
+		font-size: 3rem;
+	}
+
+	.product-img {
+		width: 60%;
+	}
+
 }
 
 @media screen and (max-width: 70em) {
+
+	.product-img {
+		width: 50%;
+	}
+
+	h1.headings {
+		margin-top: 0;
+	}
+
+	.inputs {
+		margin-top: 4%;
+	}
+	.product-buttons {
+		margin-top: 7%;
+	}
+	.product-listing-box p {
+		margin-top: 1%;
+	}
+
+
+}
+
+@media screen and (max-width: 65em) {
+
+	.product-listing-box h1 {
+		font-size: 2.5rem;
+	}
+	.product-listing-box h3 {
+		font-size: 1.5rem;
+	}
+
+	#main {
+		padding: 4rem 4rem;
+	}
+}
+
+@media screen and (max-width: 50em) {
 	.product-listing-box {
 		flex-direction: column;
+	}
+
+	h1.headings {
+		margin-top: 8%;
+	}
+
+	.product-img {
+		width: 100%;
+	}
+
+	.inputs {
+		margin-top: 6%;
+	}
+	.product-buttons {
+		margin-top: 7%;
 	}
 	
 }
