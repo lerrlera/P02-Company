@@ -14,6 +14,10 @@
 	flex: 1 1 15em;
 }
 
+#checkout {
+	color: #FFBD15;
+}
+
 .payment-form {
 	flex: 1;
 }
