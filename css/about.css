@@ -1,0 +1,17 @@
+/* About CSS */
+
+#about {
+	color: #FFBD15;
+}
+
+.about-main h1 {
+	margin: 4% 0;
+}
+
+.about-main {
+	display: flex;
+
+}
+.about-content {
+	margin-top: 10%;
+}
