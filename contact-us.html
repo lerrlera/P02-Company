@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <!-- CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/contactus.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Function to toggle the visibility of the mobile nav links
+      function toggleMobileNavLinks() {
+        var navLinks = document.querySelector('.mobile-nav-links');
+        navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
+      }
+  
+      // Event listener for the burger button
+      document.querySelector('.burger-button').addEventListener('click', function() {
+        toggleMobileNavLinks();
+      });
+  
+      // Event listener for the close button
+      document.querySelector('.close-button').addEventListener('click', function() {
+        toggleMobileNavLinks();
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div class="header-box">
+      <img class="logo" src="assets/img/logo.png" alt="This is a logo of Bento Bliss">
+      
+      <nav class="main-nav">  
+        <a class="nav-text" id="shop" href="product.html">Shop</a>
+        <a class="nav-text" id = "about" href="about.html">About</a>
+        <a class="nav-text" id = "contact" href="contact-us.html">Contact</a>
+        <a class="nav-text" id = "checkout" href="checkout.html"><i class="fa fa-shopping-cart"></i></a>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="burger-menu">
+        <button class="burger-button"> ☰ </button>
+        <div class="mobile-nav-links">
+          <button class="close-button">&times;</button>
+          <a href="product.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact-us.html">Contact</a>
+          <a class="nav-text" href="checkout.html"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id = "main">
+  <div class="contact-container">
+      <div class="contact-form">
+        <h3>Please note:</h3>
+        <p class="contact-text">Orders can be placed via our online menu or over the phone at 123-456-7890.</p>
+        <p>We now require <strong>three</strong> calendar days notice for pre ordered cakes! We appreciate your support.</p>
+
+
+        
+        <!-- closing contact form div  -->
+      </div>
+
+      <div class="contact-form">
+        <h3>Contact Form</h3>
+        <form>
+          <div class="contact-box">
+          <!-- name -->
+            <div class="contact-el">
+              <label for="name">Your Name:</label>
+              <input placeholder="Your Full Name" type="text" id="name">
+            </div>
+
+            <!-- email -->
+            <div class="contact-el">
+              <label for="email">Email:</label>
+              <input type="text" placeholder="Email Address" id="email">
+            </div>
+
+            <!-- expiry date -->
+            <div class="contact-el-msg">
+              <label for="message">Message:</label>
+              <input type="text" placeholder="Your Message" id="message">
+            </div>
+
+            <div class="contact-button">
+              <button class="submit-button" type="submit">
+                <span class="submit-text">Submit</span>
+              </button>
+            </div>
+
+          </div>
+        </form>
+    </div>
+  </section>
+    
+
+</body>
+</html>
