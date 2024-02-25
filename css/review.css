@@ -1,0 +1,93 @@
+#heading {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+/* .headings {
+	text-align: center;
+	padding-bottom: 6%;
+} */
+
+
+
+
+
+.review-box{
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.review-box input {
+	width: 100%;
+	height: 3em;
+	margin-bottom: 2%;
+  border-radius: 5px;
+  border: 1px solid #8f8f98;
+  padding: 1%;
+}
+
+.review-msg input {
+	height: 17%;
+}
+
+.review-box label {
+  display: inline-block;
+  width: 100%;
+	font-size: 1rem;
+	margin-bottom: 1%;
+}
+
+.submit-button {
+  width: 25%;
+  border: none;
+  text-align:center;
+	display: block;
+	margin: 1rem auto 4rem auto;
+}
+
+.submit-button:hover{
+  cursor:pointer;
+}
+
+.submit-text{
+  font-size: 1.2rem;
+}
+
+#newsletter {
+	padding: 4% 7%;
+	background-color: rgb(145, 179, 142, 0.7);
+	text-align: center;
+	height: 10vw;
+
+}
+
+#newsletter h3{
+	color: white;
+}
+
+@media screen and (max-width: 65em) {
+	#newsletter {
+		height: 15vw;
+	}
+}
+
+@media screen and (max-width: 55em) {
+	#newsletter {
+		height: 18vw;
+	}
+}
+
+
+@media screen and (max-width: 60em) {
+
+	#newsletter {
+		height: 26vw;
+	}
+
+  #review .submit-button{
+    width:100%;
+  }
+
+}
