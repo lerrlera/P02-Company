@@ -1,0 +1,25 @@
+.headings {
+  /* contact us heading */
+	text-align: center;
+	padding-top: 6%;
+}
+
+.contact-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 15em;
+}
+
+#checkout {
+	color: #FFBD15;
+}
+
+.contact-form {
+	flex: 1;
+}
+
+.contact-form {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
