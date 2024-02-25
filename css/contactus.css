@@ -63,6 +63,7 @@
 
 
 .submit-button {
+  width: 15%;
   border: none;
 }
 
@@ -71,7 +72,31 @@
 }
 
 .submit-text{
-  margin-left: -1.5rem;
+  margin-left: -1rem;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 60em) {
+  .contact-container {
+    flex-direction: column; 
+  }
+
+  .contact-form {
+  	margin-left: 10%;
+  	margin-bottom: 30%;
+  }
+
+  .contact-box {
+  	flex-direction: column;
+  }
+
+  .contact-text {
+  	margin-left: 0;
+  }
+
+  .submit-button{
+    width:70%;
+  }
+
 }
 
