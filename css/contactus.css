@@ -1,7 +1,7 @@
 .headings {
   /* contact us heading */
 	text-align: center;
-	padding-top: 6%;
+	padding-bottom: 6%;
 }
 
 .contact-text {
@@ -35,7 +35,7 @@
 .contact-box input {
 	max-width: 80%;
 	width: 70%;
-	height: 30px;
+	height: 3em;
 	margin-bottom: 2%;
   border-radius: 5px;
   border: 1px solid #8f8f98;
@@ -43,9 +43,7 @@
 }
 
 .contact-el-msg input {
-
 	height: 7rem;
-
 }
 
 .contact-el label, .contact-el-msg label {
@@ -63,7 +61,11 @@
 
 
 .submit-button {
+  max-width: 35%;
+  width: 25%;
   border: none;
+  text-align:center;
+
 }
 
 .submit-button:hover{
@@ -71,7 +73,30 @@
 }
 
 .submit-text{
-  margin-left: -1.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 60em) {
+  .contact-container {
+    flex-direction: column; 
+  }
+
+  .contact-form {
+  	margin-left: 10%;
+  	margin-bottom: 30%;
+  }
+
+  .contact-box {
+  	flex-direction: column;
+  }
+
+  .contact-text {
+  	margin-left: 0;
+  }
+
+  .submit-button{
+    width:70%;
+  }
+
 }
 
