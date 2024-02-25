@@ -48,7 +48,7 @@
       <nav class="main-nav">  
         <a class="nav-text" id="shop" href="product.html">Shop</a>
         <a class="nav-text" id = "about" href="about.html">About</a>
-        <a class="nav-text" id = "contact" href="#">Contact</a>
+        <a class="nav-text" id = "contact" href="contact-us.html">Contact</a>
         <a class="nav-text" id = "checkout" href="checkout.html"><i class="fa fa-shopping-cart"></i></a>
       </nav>
 
@@ -59,87 +59,55 @@
           <button class="close-button">&times;</button>
           <a href="product.html">Shop</a>
           <a href="about.html">About</a>
-          <a href="#">Contact</a>
+          <a href="contact-us.html">Contact</a>
           <a class="nav-text" href="checkout.html"><i class="fa fa-shopping-cart"></i></a>
         </div>
       </div>
     </div>
-    
-    <h1 class="headings">Contact Us</h1>
   </header>
+
   <section id = "main">
-
-
   <div class="contact-container">
       <div class="contact-form">
-        <h3>Please note</h3>
-        <p class="payment-text">All transactions are secure and encrypted.</p>
-        <!-- method -->
-        <div class="payment-el">
-          <p class="method"><strong>Payment Method:</strong></p>
-          <div class="credit">
-            <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
-            <label for="creditCard">Credit Card</label>
-          </div>
-          <div class="debit">
-            <input type="radio" id="debitCard" name="paymentMethod" value="debitCard">
-            <label for="debitCard">Debit Card</label>
-          </div>
-        </div>
+        <h3>Please note:</h3>
+        <p class="contact-text">Orders can be placed via our online menu or over the phone at 123-456-7890.</p>
+        <p>We now require <strong>three</strong> calendar days notice for pre ordered cakes! We appreciate your support.</p>
+
+
+        
+        <!-- closing contact form div  -->
+      </div>
+
+      <div class="contact-form">
+        <h3>Contact Form</h3>
         <form>
-          <div class="payment-box">
+          <div class="contact-box">
           <!-- name -->
-            <div class="payment-el">
-              <label for="cardholderName">Cardholder Name:</label>
-              <input placeholder="Cardholder Name" type="text" id="cardholderName">
+            <div class="contact-el">
+              <label for="name">Your Name:</label>
+              <input placeholder="Your Full Name" type="text" id="name">
             </div>
 
-            <!-- card -->
-            <div class="payment-el">
-              <label for="cardNumber">Card Number:</label>
-              <input type="text" placeholder="Card Number" id="cardNumber">
+            <!-- email -->
+            <div class="contact-el">
+              <label for="email">Email:</label>
+              <input type="text" placeholder="Email Address" id="email">
             </div>
 
             <!-- expiry date -->
-            <div class="payment-el">
-              <label for="expiryDate">Expiry Date:</label>
-              <input type="text" id="expiryDate" placeholder="MM/YYYY">
+            <div class="contact-el-msg">
+              <label for="message">Message:</label>
+              <input type="text" placeholder="Your Message" id="message">
             </div>
 
-            <!-- CVV -->
-            <div class="payment-el">
-              <label for="cvv">CVV:</label>
-              <input type="text" placeholder="CVV" id="cvv">
+            <div class="contact-button">
+              <button class="submit-button" type="submit">
+                <span class="submit-text">Submit</span>
+              </button>
             </div>
+
           </div>
         </form>
-      </div>
-      <div class="contact-form">
-        <div class="cart-stuff">
-          <h2 class="cart">Cart</h2>
-          <p class="payment-text">Please review your cart and proceed to placing an order! Have questions? Contact us by email at <a class="text-link" href="mailto:support@bentobliss.com">support@bentobliss.com</a></p>
-          <div class="checkout-box">
-            <img src="assets/img/green-bday-cake.png" alt="Green Bento Cake">
-            <div class="checkout-text">
-              <div class="checkout-text-el">
-                <h4>Product</h4>
-                <p>Bento Cake "Birthday"</p>
-                <p class="checkout-description">A classy green Birthday cake decorated with flowers.</p>
-              </div>
-              <div class="checkout-text-el">
-                <h4>Quantity</h4>
-                <p>1</p>
-              </div>
-              <div class="checkout-text-el">
-                <h4>Total Price</h4>
-                <p>40.00 CAD$</p>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="checkout-button">
-          <a href="#" class="submit-button">Place Order</a>
-          </div>
     </div>
   </section>
     
