@@ -64,6 +64,9 @@ input:hover, input:focus {
 	margin-bottom: 4%;
 }
 
+footer .logo{
+	max-height: none;
+}
 
 .submit-button {
   max-width: 35%;
