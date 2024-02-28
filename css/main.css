@@ -377,17 +377,16 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-  accent-color: brown;
+  accent-color: black;
 }
-
-
 
 
 /* Styling for the image */
 .cakes {
-  width: 100%;
+  width: 50%;
   display: block;
   transition: transform 0.3s ease;
+  border-radius: 8px;
 }
 
 .img-link {
@@ -615,31 +614,13 @@ h4.headings {
   margin-top: 1%;
 }
 
+.payment-box div {
+  margin-top: 1.4%;
+}
+
 .payment-text {
   color: #C2C2C2;
   margin-top: 0;
-}
-
-.payment-el {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1%;
-}
-
-.payment-el label {
-  font-size: 0.8rem;
-}
-
-.payment-el input {
-  max-width: 30%;
-  border-radius: 5px;
-  border: 1px solid #8f8f98;
-  padding: 1%;
-}
-
-.payment-el input:hover, .payment-el input:focus  {
-  border: 1px solid #F6B613;
-  outline: none; 
 }
 
 .method {
@@ -655,9 +636,8 @@ h4.headings {
   margin-right: 1%;
 }
 
-.payment-el .submit-button {
-  width: 8%;
-  margin-top: 3%;
+.payment-box .input-box label[for="cvv"] + .text-field-input {
+  margin-bottom: 10%;
 }
 
 /* Styling for the checkout cart */

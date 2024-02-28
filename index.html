@@ -366,6 +366,11 @@
 
       <h4>Rendered element:</h4>
 
+      <div class="input-box">
+        <label class="text-label" for="first-name">Your First Name</label>
+        <input id="first-name" class="text-field-input" type="text">
+      </div>
+
       <h3>Payment</h3>
       <p class="payment-text">All transactions are secure and encrypted.</p>
       <!-- method -->
@@ -383,27 +388,27 @@
       <form>
         <div class="payment-box">
         <!-- name -->
-          <div class="payment-el">
+          <div class="input-box">
             <label for="cardholderName">Cardholder Name:</label>
-            <input placeholder="Cardholder Name" type="text" id="cardholderName">
+            <input type="text" class="text-field-input" id="cardholderName">
           </div>
 
           <!-- card -->
-          <div class="payment-el">
+          <div class="input-box">
             <label for="cardNumber">Card Number:</label>
-            <input type="text" placeholder="Card Number" id="cardNumber">
+            <input type="text" class="text-field-input" id="cardNumber">
           </div>
 
           <!-- expiry date -->
-          <div class="payment-el">
+          <div class="input-box">
             <label for="expiryDate">Expiry Date:</label>
-            <input type="text" id="expiryDate" placeholder="MM/YYYY">
+            <input type="text" class="text-field-input" id="expiryDate">
           </div>
 
           <!-- CVV -->
-          <div class="payment-el">
+          <div class="input-box">
             <label for="cvv">CVV:</label>
-            <input type="text" placeholder="CVV" id="cvv">
+            <input type="text" class="text-field-input" id="cvv">
           </div>
 
           <!-- button -->
@@ -420,11 +425,11 @@
       <h3>Checkout Cart</h3>
 
       <h4>CSS selector:</h4>
-      <p>.cart</p>
+      <p>.checkout-cart</p>
 
       <h4>Sample code:</h4>
       <code>
-        &lt;h2 class="cart"&gt;Checkout Cart&lt;/h2&gt;<br>
+        &lt;h2 class="checkout-cart"&gt;Checkout Cart&lt;/h2&gt;<br>
         &lt;div class="checkout-box"&gt;<br>
         &lt;img src="assets/img/green-bday-cake.png"&gt;<br>
         &lt;div class="checkout-text"&gt;<br>
@@ -452,7 +457,7 @@
 
       <h4>Rendered element:</h4>
 
-      <h2 class="cart">Checkout Cart</h2>
+      <h2 class="checkout-cart">Checkout Cart</h2>
       <div class="checkout-box">
           
         <img src="assets/img/green-bday-cake.png" alt="Green Bento Cake">
