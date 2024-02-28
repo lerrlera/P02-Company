@@ -324,9 +324,7 @@ footer .logo {
   top: -50%;
 } 
 
-
-
-label {
+.input-box label {
   position: relative;
   white-space: nowrap;
   overflow: hidden;
@@ -349,56 +347,43 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-.input-box.focused input[type="text"],
-.input-box.focused input[type="email"] {
-  border: 1px solid #F6B613; /* Change border color to yellow when focused */
+input[type="text"]:focus, input[type="text"]:hover  {
+  outline: none !important;
+  border: 2px solid #F6B613; 
 }
-
-/*
-
-.text-label {
-  font-size: 0.8rem;
-}
-
-#entertext {
-  max-width: 15%;
-  border-radius: 5px;
-  border: 1px solid #8f8f98;
-  padding: 1%;
-}
-
-#entertext:hover, #entertext:focus  {
-  border: 1px solid #F6B613;
-  outline: none; 
-}
-
-
-.input-box input{
-   width: 350px;
-  height: 60px;
-  border-radius: 6px;
-  font-size: 18px;
-  padding: 0 15px;
-  border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
-  outline: none;
-}*/
-
 
 /* Styling for the radio button */
+
+ul.radio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .radio-text {
   margin-bottom: 1%;
 }
 
 #cake {
-  margin-right: 2%;
+  margin-right: 1%;
 }
 
 input[type="radio"] {
   transform: scale(1.5);
-  accent-color: black;
 }
+
+input[type="radio"]:checked {
+  color: #F6B613;
+}
+
+.radio-box input[type="radio"]:checked + label,
+.radio-box input[type="radio"]:focus + label {
+  outline: none !important;
+  color: #F6B613;
+}
+
+
+
 
 /* Styling for the image */
 .cakes {

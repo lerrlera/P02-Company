@@ -121,7 +121,7 @@
       <h4>Rendered element:</h4>
       <div class="input-box">
         <label class="text-label" for="first-name">Your First Name</label>
-        <input id="first-name"  class="text-field-input" type="text">
+        <input id="first-name" class="text-field-input" type="text">
       </div>
     </section>
 
@@ -138,9 +138,19 @@
       <br>&lt;label for="cake"&gt;Yes&lt;/label&gt;</code>
         
       <h4>Rendered element:</h4>
-      <p class="radio-text">Would you like to add a chocolate on a cake?</p>
-      <input type="radio" id="cake">
-      <label for="cake">Yes</label>
+      <div class="radio-box">
+        <p class="radio-text"><strong>Would you like to add a chocolate on a cake?</strong></p>
+        <ul class="radio">
+          <li>
+        <input type="radio" name="choice" id="cake" value="yes">
+        <label for="cake">Yes</label>
+      </li>
+      <li>
+        <input type="radio" name="choice" id="cake" value="no"> 
+        <label for="cake">No</label>
+      </li>
+      </ul>
+      </div>
     </section>
 
     <!-- Image as a Link section -->
