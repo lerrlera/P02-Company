@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Bento Bliss - Style Guide</title>
+  <title>Style Guide | Bento Bliss [Website]</title>
   
   <!-- CSS -->
   <link href="css/main.css" rel="stylesheet">
+
+  <!--jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,57 +19,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JS code for text inputs -->
+  <script type="text/javascript">$(document).ready(function(){
+    $('.text-field-input').on('focus', function(){
+        $(this).closest('.input-box').addClass('focused');
+    });
+
+    $('.text-field-input').on('blur', function(){
+        if ($(this).val() === '') {
+            $(this).closest('.input-box').removeClass('focused');
+        }
+    });
+});</script>
 </head>
 
 <body>
-  <header>
-    <div class="header-box">
-      
-      <img class="logo" src="assets/img/logo.png" alt="This is a logo of Bento Bliss">
-            
-      <nav class="main-nav">  
-        <div class="sub-nav">
-          <button class="sub-nav-button">Elements <i class="fa fa-caret-down"></i></button>
-          <div class="sub-nav-content">
-            <a href="#interactive_elements">Interactive</a>
-            <a href="#text_elements">Text</a>
-            <a href="#combined_elements">Combined</a>
-          </div>
-        </div>
-        <div class="sub-nav">
-          <button class="sub-nav-button">Branding <i class="fa fa-caret-down"></i></button>
-          <div class="sub-nav-content">
-            <a href="#branding_ideas">Ideas</a>
-            <a href="#brand_components">Components</a>
-          </div>
-        </div>
-          <div class="sub-nav">
-          <button class="sub-nav-button">Templates <i class="fa fa-caret-down"></i></button>
-          <div class="sub-nav-content">
-            <a href="product.html">Product</a>
-            <a href="checkout.html">Checkout</a>
-          </div>
-        </div>
-        <a class="nav-text" href="#citations">Citations</a>
-       
-        <!--
-           <a class="nav-text" href="#interactive_elements">Interactive Elements</a>
-        <a class="nav-text" href="#text_elements">Text Elements</a>
 
-        <a class="nav-text" href="#combined_elements">Combined Elements</a>
-        <a class="nav-text" href="#branding_ideas">Branding</a>
-        <a class="nav-text" href="#citations">Citations</a>-->
+   <header>
+    <div class="header-box">
+      <a class="logo-link-style" href="#">
+        <img class="logo" src="assets/img/logo.svg" alt="This is a logo of Bento Bliss">
+      </a>
+      
+      <nav class="main-nav-style">  
+        <a class="nav-text" href="#interactive_elements">INTERACTIVE ELEMENTS</a>
+        <a class="nav-text" href="#text_elements">TEXT ELEMENTS</a>
+        <a class="nav-text" href="#combined_elements">COMBINED ELEMENTS</a>
+        <a class="nav-text" href="#branding_ideas">BRANDING IDEAS</a>
+        <a class="nav-text" href="#brand_components">BRANDING COMPONENTS</a>
+        <a class="nav-text" href="#citations">CITATIONS</a>
+
       </nav>
     </div>
-
     <div class="banner">
-    <h1 class="main-h1">Style Guide</h1>
-    <p>This style guide illustrates Bento Bliss's brand direction in terms of web elements, basic branding ideas, branding components, art direction and responsive template structures. Please use the main navigation to view other sections or pages.</p>
-
+      <h1 class="main-h1">Style Guide</h1>
+    <p>This style guide illustrates Bento Bliss's brand direction in terms of web elements, basic branding ideas, branding components and art direction. Please use the main navigation to view other sections or pages.</p>
   </div>
 
   </header>
-
+  
   <section id="main">
   <!-- INTERACTIVE ELEMENTS SECTION // -->
   <section id="interactive_elements">
@@ -124,12 +116,12 @@
       <p>.text-label</p>
       <p>#entertext</p>
       <h4>Sample code:</h4>
-      <code>&lt;div class="input-box"&gt;<br>&lt;label class="text-label"&gt;Enter text:&lt;/label&gt;<br>
-      &lt;input id="entertext" type="text"&gt;<br>&lt;/div&gt;</code>
+      <code>&lt;div class="input-box"&gt;<br>&lt;label class="text-label" for="first-name"&gt;Enter text:&lt;/label&gt;<br>
+      &lt;input id="first-name" type="text"&gt;<br>&lt;/div&gt;</code>
       <h4>Rendered element:</h4>
       <div class="input-box">
-        <label class="text-label">Your First Name</label>
-        <input placeholder="First Name" id="entertext" type="text">
+        <label class="text-label" for="first-name">Your First Name</label>
+        <input id="first-name"  class="text-field-input" type="text">
       </div>
     </section>
 
@@ -522,7 +514,7 @@
 
       <h3 class="color-palette">Colour Palette</h3>
       <div class="white-cream"><p>White Cream: #FEFCF8</p></div>
-      <div class="orange-yellow"><p>Orange Yellow: #FFBD15</p></div>
+      <div class="orange-yellow"><p>Orange Yellow: #F6B613</p></div>
       <div class="pastel-green"><p>Pastel Green: #91B38E</p></div>
       <div class="grey-black"><p>Grey Black: #3C3C3C</p></div>
     </section>

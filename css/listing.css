@@ -65,7 +65,7 @@ select {
 }
 
 #quantity:hover, #quantity:focus  {
-  border: 1px solid #FFBD15;
+  border: 1px solid #F6B613;
   outline: none; 
 }
 
@@ -75,7 +75,7 @@ select {
 }
 
 select:hover, select:focus  {
-  border: 1px solid #FFBD15;
+  border: 1px solid #F6B613;
   outline: none; 
 }
 

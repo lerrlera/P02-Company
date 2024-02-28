@@ -5,7 +5,7 @@
 }
 
 #contact {
-	color: #FFBD15;
+	color: #F6B613;
 }
 
 .contact-text {
@@ -43,7 +43,7 @@
   padding: 1%;
 }
 input:hover, input:focus {
-	border: 1px solid #FFBD15;
+	border: 1px solid #F6B613;
     outline: none;
 }
 
