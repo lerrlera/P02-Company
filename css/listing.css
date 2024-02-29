@@ -43,7 +43,7 @@ h1.headings {
 }
 
 label {
-	color: #91B38E;
+	color: var(--dark-beige);
 	margin-right: 3%;
 }
 
