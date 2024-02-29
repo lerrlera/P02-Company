@@ -1,12 +1,30 @@
 /* CSS for Product Listing */
 
 .product-listing-box {
-	margin-top: 5%;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 8%;
 }
 
+.breadcrumbs {
+	display: flex;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	color: var(--dark-grey);
+}
+
+.breadcrumbs p {
+	margin: 0 1%;
+}
+
+.breadcrumbs-link {
+	text-decoration: none;
+	color: var(--accent-red);
+}
+
+.breadcrumbs-link:hover, .breadcrumbs-link:focus {
+	color: var(--dark-beige);
+}
 h1.headings {
 	margin-top: 8%;
 }
@@ -148,8 +166,36 @@ select:hover, select:focus  {
 		flex-direction: column;
 	}
 
+	#main {
+		padding: 6% 3%;
+	}
+
+	.breadcrumbs {
+		margin-top: 20%;
+	}
+
 	h1.headings {
 		margin-top: 8%;
+	}
+
+	.custom-select select {
+		width: 100%;
+		height: auto;
+	}
+
+	.custom-select {
+		width: 100%;
+		height: auto;
+	}
+
+	#quantity {
+		max-width: 10%;
+		height: 2.5em;
+	}
+
+	.q-input {
+		width: 100%;
+		height: auto;
 	}
 
 	.product-img {
@@ -160,7 +206,14 @@ select:hover, select:focus  {
 		margin-top: 6%;
 	}
 	.product-buttons {
-		margin-top: 7%;
+		margin-top: 20%;
+		margin-bottom: 15%;
+		text-align: center;
+	}
+
+	.product-buttons .submit-button {
+		padding: 2.5% 20%;
+		text-align: center;
 	}
 	
 }

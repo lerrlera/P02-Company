@@ -33,31 +33,60 @@
 	text-align: left;
 }
 
-.contact-box input {
-	max-width: 80%;
-	width: 70%;
-	height: 3em;
-	margin-bottom: 2%;
-  border-radius: 5px;
-  border: 1px solid #8f8f98;
-  padding: 1%;
+.contact-el, .contact-el-msg {
+	display: block;
+  position: relative;
+  outline: none;
+  width: 70%;
+  margin-bottom: 3%;
 }
-input:hover, input:focus {
-	border: 1px solid var(--accent-red);
-    outline: none;
+
+.contact-el.focused label {
+	transition: top 0.2s ease;
+  top: -50%;
+}
+.contact-el-msg.focused label {
+	transition: top 0.2s ease;
+  top: -20%;
+}
+
+.contact-el label {
+	position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em;
+  position: absolute;
+  top: 0px;
+  display: inline-block;
+  background: var(--white-cream);
+  margin: 8px 5px;
+  line-height: 1.4em;
+  padding: 0 1%;
+  transition: all .2s linear;
+  text-transform: capitalize;
+}
+
+.contact-el-msg label {
+	position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em;
+  position: absolute;
+  top: 0px;
+  display: inline-block;
+  background: var(--white-cream);
+  margin: 8px 5px;
+  line-height: 1.4em;
+  padding: 0 1%;
+  transition: all .2s linear;
+  text-transform: capitalize;
 }
 
 .contact-el-msg input {
-	height: 7rem;
-}
-
-.contact-el label, .contact-el-msg label {
-	font-size: 1rem;
-	margin-bottom: 1%;
-  display: inline-block;
   width: 100%;
+  padding: 10%;
+ 
 }
-
 
 .checkout-cart .contact-text {
 	max-width: 85%;

@@ -8,6 +8,10 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/contactus.css" rel="stylesheet">
 
+  <!--jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -37,6 +41,32 @@
       });
     });
   </script>
+
+
+<!-- JS code for text inputs -->
+  <script type="text/javascript">$(document).ready(function(){
+    $('.text-field-input').on('focus', function(){
+        $(this).closest('.contact-el').addClass('focused');
+    });
+
+    $('.text-field-input').on('blur', function(){
+        if ($(this).val() === '') {
+            $(this).closest('.contact-el').removeClass('focused');
+        }
+    });
+});</script>
+
+<script type="text/javascript">$(document).ready(function(){
+    $('.text-field-input').on('focus', function(){
+        $(this).closest('.contact-el-msg').addClass('focused');
+    });
+
+    $('.text-field-input').on('blur', function(){
+        if ($(this).val() === '') {
+            $(this).closest('.contact-el-msg').removeClass('focused');
+        }
+    });
+});</script>
 
 </head>
 <body>
@@ -95,20 +125,20 @@
           <div class="contact-box">
           <!-- name -->
             <div class="contact-el">
-              <label for="name">Your Name:</label>
-              <input placeholder="Your Full Name" type="text" id="name">
+              <label for="name">Your Name</label>
+              <input class="text-field-input" type="text" id="name">
             </div>
 
             <!-- email -->
             <div class="contact-el">
-              <label for="email">Email:</label>
-              <input type="text" placeholder="Email Address" id="email">
+              <label for="email">Email</label>
+              <input class="text-field-input" type="text"  id="email">
             </div>
 
             <!-- msg -->
             <div class="contact-el-msg">
-              <label for="message">Message:</label>
-              <input type="text" placeholder="Your Message" id="message">
+              <label for="message">Message</label>
+              <input class="text-field-input" type="text" id="message">
             </div>
 
             <div class="contact-button">

@@ -12,6 +12,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex: 1 1 15em;
+	margin-top: 15%;
 }
 
 #checkout {
@@ -32,22 +33,24 @@
 	flex-direction: column;
 }
 
+/*
 .payment-el label {
 	font-size: 1rem;
 	margin-bottom: 1%;
-}
+}*/
 
 .checkout-cart .payment-text {
 	max-width: 85%;
 	margin-bottom: 4%;
 }
 
+/*
 .payment-box .payment-el input {
 	max-width: 80%;
 	width: 70%;
 	height: 30px;
 	margin-bottom: 2%;
-}
+}*/
 
 .method {
 	margin-top: 4%;
@@ -63,6 +66,10 @@
 	margin-left: 5%;
 }
 
+.input-box {
+	width: 65%;
+	margin-bottom: 2%;
+}
 .checkout-box img {
   max-width: 100%;
   width: 40%;

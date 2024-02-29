@@ -9,6 +9,10 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/checkout.css" rel="stylesheet">
 
+  <!--jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -37,6 +41,19 @@
     });
   });
 </script>
+
+<!-- JS code for text inputs -->
+  <script type="text/javascript">$(document).ready(function(){
+    $('.text-field-input').on('focus', function(){
+        $(this).closest('.input-box').addClass('focused');
+    });
+
+    $('.text-field-input').on('blur', function(){
+        if ($(this).val() === '') {
+            $(this).closest('.input-box').removeClass('focused');
+        }
+    });
+});</script>
 
 </head>
 
@@ -90,30 +107,31 @@
           </div>
         </div>
         <form>
+
           <div class="payment-box">
           <!-- name -->
-            <div class="payment-el">
-              <label for="cardholderName">Cardholder Name:</label>
-              <input placeholder="Cardholder Name" type="text" id="cardholderName">
+            <div class="input-box">
+              <label for="cardholderName">Cardholder Name</label>
+            <input type="text" class="text-field-input" id="cardholderName">
             </div>
 
             <!-- card -->
-            <div class="payment-el">
-              <label for="cardNumber">Card Number:</label>
-              <input type="text" placeholder="Card Number" id="cardNumber">
-            </div>
+             <div class="input-box">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" class="text-field-input" id="cardNumber">
+          </div>
 
             <!-- expiry date -->
-            <div class="payment-el">
-              <label for="expiryDate">Expiry Date:</label>
-              <input type="text" id="expiryDate" placeholder="MM/YYYY">
-            </div>
+          <div class="input-box">
+            <label for="expiryDate">Expiry Date</label>
+            <input type="text" class="text-field-input" id="expiryDate">
+          </div>
 
-            <!-- CVV -->
-            <div class="payment-el">
-              <label for="cvv">CVV:</label>
-              <input type="text" placeholder="CVV" id="cvv">
-            </div>
+            <!-- expiry date -->
+          <div class="input-box">
+            <label for="cvv-code">CVV</label>
+            <input type="text" class="text-field-input" id="cvv-code">
+          </div>
           </div>
         </form>
       </div>
