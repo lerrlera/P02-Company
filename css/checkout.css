@@ -15,7 +15,7 @@
 }
 
 #checkout {
-	color: #F6B613;
+	color: var(--accent-red);
 }
 
 .payment-form {

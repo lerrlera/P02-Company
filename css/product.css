@@ -15,7 +15,7 @@ h1.headings {
 }
 
 #shop {
-	color: #F6B613;
+	color: var(--accent-red);
 }
 
 .product-text {
@@ -25,7 +25,7 @@ h1.headings {
 
 .product-box {
   border-radius: 10px;
-  background-color: rgb(255, 189, 21,0.03);
+  background-color: rgb(255, 189, 21,0.04);
   padding: 5% 8%;
   transition: background-color .25s linear;
   margin-bottom: 2rem;
@@ -34,11 +34,12 @@ h1.headings {
 
 
 .product-box:hover {
-  background-color: rgb(255, 189, 21,0.07);
+  background-color: rgb(255, 189, 21,0.08);
 }
 
 .product-box h2 {
 	font-size: 1.7rem;
+  color: #3C3C3C;
 }
 
 .product-box p {
@@ -48,7 +49,7 @@ h1.headings {
 .product-box h3 {
 	font-size: 1.3rem;
 	margin:0;
-  color: rgb(60, 60, 60,0.6);
+  color: rgb(60, 60, 60,0.4);
 }
 
 .product-buttons .submit-button {
@@ -79,6 +80,7 @@ h1.headings {
 }
 
 
+
 @media screen and (max-width: 80em) {
 
 
@@ -91,12 +93,13 @@ h1.headings {
 
 
 @media screen and (max-width: 50em) {
-  .product-banner h1 {
-  	font-size: 2.2rem;
-  }
 
   .product-grid {
       margin-bottom: 20%;
+  }
+
+  #main {
+    padding: 2% 2%;
   }
 
 }
@@ -107,21 +110,12 @@ h1.headings {
    grid-template-columns: 1fr;
    grid-gap: 1%;
    margin-bottom: 50%;
+   margin-left: 3%;
   }
 
- 
-
-
-  .product-banner {
-  	height: 10vw;
+  h1.headings {
+    margin-top: 30%;
   }
-
-  .product-banner h1 {
-  	margin-top: 11%;
-    margin-bottom: 5%;
-  	font-size: 2.5rem;
-  }
-
 
   .product-buttons {
     margin-bottom: 5%;

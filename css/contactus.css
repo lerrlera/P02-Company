@@ -5,7 +5,7 @@
 }
 
 #contact {
-	color: #F6B613;
+	color: var(--accent-red);
 }
 
 .contact-text {
@@ -43,7 +43,7 @@
   padding: 1%;
 }
 input:hover, input:focus {
-	border: 1px solid #F6B613;
+	border: 1px solid var(--accent-red);
     outline: none;
 }
 

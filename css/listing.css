@@ -12,7 +12,7 @@ h1.headings {
 }
 
 .product-listing-info h3{
-	color: #91B38E;
+	color: var(--accent-red);
 }
 
 .product-img {
@@ -65,7 +65,7 @@ select {
 }
 
 #quantity:hover, #quantity:focus  {
-  border: 1px solid #F6B613;
+  border: 1px solid var(--accent-red);
   outline: none; 
 }
 
@@ -75,7 +75,7 @@ select {
 }
 
 select:hover, select:focus  {
-  border: 1px solid #F6B613;
+  border: 1px solid var(--accent-red);
   outline: none; 
 }
 
