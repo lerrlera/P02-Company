@@ -36,7 +36,7 @@ input:hover, input:focus {
 	outline: none;
 }
 
-.submit-button {
+.review-button .submit-button {
   width: 25%;
   border: none;
   text-align:center;
@@ -44,7 +44,7 @@ input:hover, input:focus {
 	margin: 1rem auto 4rem auto;
 }
 
-.submit-button:hover{
+.review-button .submit-button:hover{
   cursor:pointer;
 }
 
@@ -52,48 +52,3 @@ input:hover, input:focus {
   font-size: 1.2rem;
 }
 
-#newsletter {
-	padding: 4% 7%;
-	background-color: rgb(145, 179, 142, 0.7);
-	text-align: center;
-	height: 10vw;
-
-}
-
-#newsletter h3{
-	color: white;
-}
-
-footer .logo{
-	max-height: none;
-}
-
-@media screen and (max-width: 65em) {
-
-	#newsletter .submit-button{
-		width: 50%;
-	}
-
-	#newsletter {
-		height: 15vw;
-	}
-}
-
-@media screen and (max-width: 55em) {
-	#newsletter {
-		height: 18vw;
-	}
-}
-
-
-@media screen and (max-width: 60em) {
-
-	#newsletter {
-		height: 26vw;
-	}
-
-  #review .submit-button{
-    width:100%;
-  }
-
-}

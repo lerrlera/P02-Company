@@ -1,23 +1,17 @@
 /*
   STYLE GUIDE STYLING 
-  product styling for the style guide 
+  product styling for the product shop page 
 */
 
 /* Banner */
-.product-banner {
-	position: relative;
-	max-width: 100%;
-	width: 100%;
-	height: 5vw;
-	padding: 5% 0;
-	margin:0;
+
+#intro-banner {
+  margin-top: 15%;
+  margin-bottom: 7%;
 }
 
-.product-banner h1 {
-	text-align: center;
-	position: relative;
-	margin-top: 5%;
-	color: #F6B613;
+h1.headings {
+  text-align: center;
 }
 
 #shop {
@@ -30,10 +24,6 @@
 }
 
 .product-box {
-
-  /*
-  flex-basis: calc(33.33% - 2%); 
-  max-width: calc(33.33% - 2%); */
   border-radius: 10px;
   background-color: rgb(255, 189, 21,0.03);
   padding: 5% 8%;
@@ -76,7 +66,6 @@
 }
 
 .product-grid {
-  margin-top: 15%;
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr;
