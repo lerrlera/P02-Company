@@ -8,11 +8,11 @@
 
 .bento {
 	max-width: 100%;
-	width: 44%;
-	transform: rotate(20deg);
+	width: 60%;
 	position: absolute;
 	z-index: 1;
-	margin-top: 18%;
+	margin-top: 36%;
+	right: 55%;
 }
 
 .shop {
@@ -54,7 +54,7 @@
 .about-box {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 25%;
+	margin-top: 15%;
 }
 
 .about-box p {
