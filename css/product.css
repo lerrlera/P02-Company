@@ -25,7 +25,7 @@ h1.headings {
 
 .product-box {
   border-radius: 10px;
-  background-color: rgb(255, 189, 21,0.04);
+  background-color: rgb(179, 169, 142, 0.07);
   padding: 5% 8%;
   transition: background-color .25s linear;
   margin-bottom: 2rem;
@@ -34,7 +34,7 @@ h1.headings {
 
 
 .product-box:hover {
-  background-color: rgb(255, 189, 21,0.08);
+  background-color: rgb(179, 169, 142, 0.2);
 }
 
 .product-box h2 {

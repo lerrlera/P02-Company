@@ -6,7 +6,7 @@
 :root {
   --white-cream: #FFFBF7; 
   --dark-beige: #B3A98E; 
-  --accent-red: #D26D6E; 
+  --accent-red: #A3352A; 
   --dark-grey: #3C3C3C; 
 }
 
@@ -118,6 +118,26 @@ code {
 
 .logo-link:hover, .logo-link:focus {
   transform: scale(1.1);
+}
+
+.breadcrumbs {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  color: var(--dark-grey);
+}
+
+.breadcrumbs p {
+  margin: 0 1%;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: var(--accent-red);
+}
+
+.breadcrumbs-link:hover, .breadcrumbs-link:focus {
+  color: var(--dark-beige);
 }
 
 .main-h1 {
