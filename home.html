@@ -1,15 +1,12 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-CA">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-
+  <meta charset="utf-8">
+  <title>Home - Bento Bliss</title>
+  
   <!-- CSS -->
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/review.css" rel="stylesheet">
-
-  <!--jQuery Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="css/home.css" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,43 +17,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- JavaScript -->
+  <!-- This is a JS code for burger functionality -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Function to toggle the visibility of the mobile nav links
-      function toggleMobileNavLinks() {
-        var navLinks = document.querySelector('.mobile-nav-links');
-        navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
-      }
-  
-      // Event listener for the burger button
-      document.querySelector('.burger-button').addEventListener('click', function() {
-        toggleMobileNavLinks();
-      });
-  
-      // Event listener for the close button
-      document.querySelector('.close-button').addEventListener('click', function() {
-        toggleMobileNavLinks();
-      });
-    });
-  </script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Function to toggle the visibility of the mobile nav links
+    function toggleMobileNavLinks() {
+      var navLinks = document.querySelector('.mobile-nav-links');
+      navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
+    }
 
-  <script type="text/javascript">$(document).ready(function(){
-    $('.text-field-input').on('focus', function(){
-        $(this).closest('.review-msg').addClass('focused');
+    // Event listener for the burger button
+    document.querySelector('.burger-button').addEventListener('click', function() {
+      toggleMobileNavLinks();
     });
 
-    $('.text-field-input').on('blur', function(){
-        if ($(this).val() === '') {
-            $(this).closest('.review-msg').removeClass('focused');
-        }
+    // Event listener for the close button
+    document.querySelector('.close-button').addEventListener('click', function() {
+      toggleMobileNavLinks();
     });
-});</script>
+  });
+</script>
 
 </head>
+
 <body>
-  <!-- header -->
- <header>
+  <header>
     <div class="header-box">
       <a class="logo-link" href="home.html">
         <img class="logo" src="assets/img/logo.svg" alt="This is a logo of Bento Bliss">
@@ -87,37 +72,12 @@
       </div>
     </div>
   </header>
-
-
   
-  <section id = "heading">
-    <h1 class="headings">Thank you!</h1>
-    <h3>Your order #7 has been placed.</h3>
+  <section id="main">
+  
   </section>
+  
 
-  <section id="review">
-    <form>
-      <div class="review-box">
-
-        <div class="review-msg">
-          <label for="message">How did you feel about your purchase?</label>
-          <input class="text-field-input" type="text" id="message">
-        </div>
-        
-        <div class="review-button">
-          <button class="submit-button" type="submit">
-            <span class="submit-text">Submit</span>
-          </button>
-        </div>
-
-      </div>
-    </form>
-  </section>
-    
-  <section id="newsletter">
-    <h3>Stay up to date!</h3>
-    <a href="#" class="submit-button">Subscribe to Our Newsletter</a>
-  </section>
 
    <footer>
     <div class="footer-box">
@@ -150,6 +110,5 @@
       <p class="copyright">© Copyright 2024 Bento Bliss. All rights reserved.</p>
     </div>
   </footer>
-
-</body>
+   </body>
 </html>
