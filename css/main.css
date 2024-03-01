@@ -4,9 +4,9 @@
 
 /* Colors */
 :root {
-  --white-cream: #FFFBF7; 
+  --white-cream: #FCF9F2; 
   --dark-beige: #B3A98E; 
-  --accent-red: #A3352A; 
+  --accent-red: #BE2025; 
   --dark-grey: #3C3C3C; 
 }
 
@@ -78,7 +78,7 @@ p {
 }
 
 code {
-  background-color: #EEE;
+  background-color: #F0E8DA;
   padding: 0.6rem;
   display: block;
   color:#8f8f98;
@@ -255,13 +255,13 @@ code {
 
 #newsletter {
   padding: 4% 7%;
-  background-color: rgb(179, 169, 142, 0.3);
+  background-color: rgb(179, 169, 142, 0.07);
   text-align: center;
 }
 
 /* Footer */
 footer {
-  background-color: rgb(255, 189, 21,0.04);
+  background-color: #F0E8DA;
   padding: 3% 6%;
 }
 
@@ -500,7 +500,7 @@ footer .logo {
 input[type="text"] {
   padding: 10px;
   width: 100%;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #AFA69B;
   border-radius: 5px;
   background-color: var(--white-cream);
 }
@@ -869,6 +869,10 @@ h2.brand-components {
   padding: 4%;
   background-color: var(--accent-red);
   border: 1px solid black;
+}
+
+.accent-red p {
+  color: white;
 }
 
 .dark-beige {
