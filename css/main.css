@@ -159,7 +159,7 @@ code {
    cursor: pointer;
    display: none;
    border: none;
-   background-color: #FEFCF8;
+   background-color: var(--white-cream);
 }
 
 
