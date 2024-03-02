@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <title>Better Tgt - Bento Bliss</title>
+  
+  <!-- CSS -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/listing.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- This is a JS code for burger functionality -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Function to toggle the visibility of the mobile nav links
+    function toggleMobileNavLinks() {
+      var navLinks = document.querySelector('.mobile-nav-links');
+      navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
+    }
+
+    // Event listener for the burger button
+    document.querySelector('.burger-button').addEventListener('click', function() {
+      toggleMobileNavLinks();
+    });
+
+    // Event listener for the close button
+    document.querySelector('.close-button').addEventListener('click', function() {
+      toggleMobileNavLinks();
+    });
+  });
+</script>
+
+</head>
+
+<body>
+ <header>
+    <div class="header-box">
+      <a class="logo-link" href="home.html">
+        <img class="logo" src="assets/img/logo.svg" alt="This is a logo of Bento Bliss">
+      </a>
+      
+      <nav class="main-nav">  
+        <a class="nav-text" id="shop" href="product.html">SHOP</a>
+        <a class="nav-text" id = "about" href="about.html">ABOUT</a>
+        <a class="nav-text" id = "contact" href="contact-us.html">CONTACT</a>
+        <a class="cart" id = "checkout" href="checkout.html"><svg class="cart-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.99986 4.59375C5.22321 4.59375 4.59361 5.22335 4.59361 6C4.59361 6.77665 5.22321 7.40625 5.99986 7.40625L5.99986 4.59375ZM10.9999 6L12.3641 5.65893C12.2076 5.03292 11.6451 4.59375 10.9999 4.59375L10.9999 6ZM37.9999 33.4062C38.7765 33.4062 39.4061 32.7766 39.4061 32C39.4061 31.2233 38.7765 30.5937 37.9999 30.5937V33.4062ZM41.9999 10L43.3641 10.3411C43.4691 9.92096 43.3748 9.4759 43.1083 9.13458C42.8418 8.79326 42.4329 8.59375 41.9999 8.59375V10ZM37.9999 26V27.4062C38.6451 27.4062 39.2076 26.9671 39.3641 26.3411L37.9999 26ZM5.99986 7.40625L10.9999 7.40625L10.9999 4.59375L5.99986 4.59375L5.99986 7.40625ZM9.6356 6.34107L10.6356 10.3411L13.3641 9.65893L12.3641 5.65893L9.6356 6.34107ZM10.6356 10.3411L14.6356 26.3411L17.3641 25.6589L13.3641 9.65893L10.6356 10.3411ZM15.9999 24.5937H14.9999V27.4062H15.9999V24.5937ZM14.9999 33.4062H37.9999V30.5937H14.9999V33.4062ZM10.5936 29C10.5936 31.4335 12.5664 33.4062 14.9999 33.4062V30.5937C14.1197 30.5937 13.4061 29.8802 13.4061 29H10.5936ZM14.9999 24.5937C12.5664 24.5937 10.5936 26.5665 10.5936 29H13.4061C13.4061 28.1198 14.1197 27.4062 14.9999 27.4062V24.5937ZM11.9999 11.4062H41.9999V8.59375H11.9999V11.4062ZM40.6356 9.65893L36.6356 25.6589L39.3641 26.3411L43.3641 10.3411L40.6356 9.65893ZM37.9999 24.5937H15.9999V27.4062H37.9999V24.5937ZM36.5936 40C36.5936 40.3279 36.3278 40.5937 35.9999 40.5937V43.4062C37.8811 43.4062 39.4061 41.8812 39.4061 40H36.5936ZM35.9999 40.5937C35.6719 40.5937 35.4061 40.3279 35.4061 40H32.5936C32.5936 41.8812 34.1186 43.4062 35.9999 43.4062V40.5937ZM35.4061 40C35.4061 39.6721 35.6719 39.4062 35.9999 39.4062V36.5937C34.1186 36.5937 32.5936 38.1188 32.5936 40H35.4061ZM35.9999 39.4062C36.3278 39.4062 36.5936 39.6721 36.5936 40H39.4061C39.4061 38.1188 37.8811 36.5937 35.9999 36.5937V39.4062ZM16.5936 40C16.5936 40.3279 16.3278 40.5937 15.9999 40.5937V43.4062C17.8811 43.4062 19.4061 41.8812 19.4061 40H16.5936ZM15.9999 40.5937C15.6719 40.5937 15.4061 40.3279 15.4061 40H12.5936C12.5936 41.8812 14.1186 43.4062 15.9999 43.4062V40.5937ZM15.4061 40C15.4061 39.6721 15.6719 39.4062 15.9999 39.4062V36.5937C14.1186 36.5937 12.5936 38.1188 12.5936 40H15.4061ZM15.9999 39.4062C16.3278 39.4062 16.5936 39.6721 16.5936 40H19.4061C19.4061 38.1188 17.8811 36.5937 15.9999 36.5937V39.4062Z" fill="black"/>
+        </svg>
+      </a>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="burger-menu">
+        <button class="burger-button"> ☰ </button>
+        <div class="mobile-nav-links">
+          <button class="close-button">&times;</button>
+          <a href="product.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact-us.html">Contact</a>
+          <a class="mobile-cart" href="checkout.html"><svg class="cart-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.99986 4.59375C5.22321 4.59375 4.59361 5.22335 4.59361 6C4.59361 6.77665 5.22321 7.40625 5.99986 7.40625L5.99986 4.59375ZM10.9999 6L12.3641 5.65893C12.2076 5.03292 11.6451 4.59375 10.9999 4.59375L10.9999 6ZM37.9999 33.4062C38.7765 33.4062 39.4061 32.7766 39.4061 32C39.4061 31.2233 38.7765 30.5937 37.9999 30.5937V33.4062ZM41.9999 10L43.3641 10.3411C43.4691 9.92096 43.3748 9.4759 43.1083 9.13458C42.8418 8.79326 42.4329 8.59375 41.9999 8.59375V10ZM37.9999 26V27.4062C38.6451 27.4062 39.2076 26.9671 39.3641 26.3411L37.9999 26ZM5.99986 7.40625L10.9999 7.40625L10.9999 4.59375L5.99986 4.59375L5.99986 7.40625ZM9.6356 6.34107L10.6356 10.3411L13.3641 9.65893L12.3641 5.65893L9.6356 6.34107ZM10.6356 10.3411L14.6356 26.3411L17.3641 25.6589L13.3641 9.65893L10.6356 10.3411ZM15.9999 24.5937H14.9999V27.4062H15.9999V24.5937ZM14.9999 33.4062H37.9999V30.5937H14.9999V33.4062ZM10.5936 29C10.5936 31.4335 12.5664 33.4062 14.9999 33.4062V30.5937C14.1197 30.5937 13.4061 29.8802 13.4061 29H10.5936ZM14.9999 24.5937C12.5664 24.5937 10.5936 26.5665 10.5936 29H13.4061C13.4061 28.1198 14.1197 27.4062 14.9999 27.4062V24.5937ZM11.9999 11.4062H41.9999V8.59375H11.9999V11.4062ZM40.6356 9.65893L36.6356 25.6589L39.3641 26.3411L43.3641 10.3411L40.6356 9.65893ZM37.9999 24.5937H15.9999V27.4062H37.9999V24.5937ZM36.5936 40C36.5936 40.3279 36.3278 40.5937 35.9999 40.5937V43.4062C37.8811 43.4062 39.4061 41.8812 39.4061 40H36.5936ZM35.9999 40.5937C35.6719 40.5937 35.4061 40.3279 35.4061 40H32.5936C32.5936 41.8812 34.1186 43.4062 35.9999 43.4062V40.5937ZM35.4061 40C35.4061 39.6721 35.6719 39.4062 35.9999 39.4062V36.5937C34.1186 36.5937 32.5936 38.1188 32.5936 40H35.4061ZM35.9999 39.4062C36.3278 39.4062 36.5936 39.6721 36.5936 40H39.4061C39.4061 38.1188 37.8811 36.5937 35.9999 36.5937V39.4062ZM16.5936 40C16.5936 40.3279 16.3278 40.5937 15.9999 40.5937V43.4062C17.8811 43.4062 19.4061 41.8812 19.4061 40H16.5936ZM15.9999 40.5937C15.6719 40.5937 15.4061 40.3279 15.4061 40H12.5936C12.5936 41.8812 14.1186 43.4062 15.9999 43.4062V40.5937ZM15.4061 40C15.4061 39.6721 15.6719 39.4062 15.9999 39.4062V36.5937C14.1186 36.5937 12.5936 38.1188 12.5936 40H15.4061ZM15.9999 39.4062C16.3278 39.4062 16.5936 39.6721 16.5936 40H19.4061C19.4061 38.1188 17.8811 36.5937 15.9999 36.5937V39.4062Z" fill="black"/>
+        </svg></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section id="main">
+    <div class="breadcrumbs"><a class="breadcrumbs-link" href="home.html">Home </a><p> > </p><a class="breadcrumbs-link" href="product.html">Shop  </a><p> > </p><a class="breadcrumbs-link" href="#">Better Tgt</a></div>
+
+    <div class="product-listing-box">
+
+         <img src="assets/img/better-tgt.png" class="product-img" alt="Better Tgt Cake">
+         <div class="product-listing-info">
+            <h1 class="headings">Better Tgt</h1>
+
+          <h3>40.00 CAD$ / 250g</h3>
+          <p>Experience the allure of our white Bento cake, adorned simply with the endearing message "Better Together". Beneath its surface lies a delightful vanilla biscuit cake. Whether it's a cozy gathering or an intimate celebration, this cake promises sweet moments shared with loved ones.</p>
+          <p>Please order at least <strong>24 HOURS</strong> in advance. Thanks for understanding!</p>
+
+          <div class="inputs">
+
+             <div class="custom-select">
+              <label>Topping Type</label>
+              <select>
+                <option value="vanilla">Vanilla Milk</option>
+                <option value="chocolate">Chocolate Truffle</option>
+                <option value="yuzu">Yuzu Matcha</option>
+              </select>
+            </div>
+
+            <div class="quantity">
+              <label>Quantity</label>
+              <input type="number" class="q-input" id="quantity" name="quantity" min="1" value="1">
+            </div>
+          
+          </div>
+          <div class="product-buttons">
+            <a href="checkout.html" class="submit-button">Add to Cart</a>
+          </div>
+         </div>
+    </div>
+  </section>
+  
+
+
+   <footer>
+    <div class="footer-box">
+      <img class="logo" src="assets/img/logo.svg" alt="This is a logo of Bento Bliss">
+      <div class="address">
+        <h3>Address & Hours</h3>
+        <p>1059 Howe Street, Vancouver, BC</p>
+        <p><strong>Mon - Fri:</strong> 9:00am - 20:00pm</p>
+        <p><strong>Weekends:</strong> 10:00am - 16:00pm</p>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <p><strong>Have questions?</strong></p>
+        <p><a class ="text-link" href="mailto:info@bentobliss.com">support@bentobliss.com</a></p>
+      </div>
+
+      <div class="links">
+        <h3>Links</h3>
+        <a class ="text-link" href="#style-guide.html">Style Guide</a>
+      </div>
+    </div>
+
+    <div class="social-media">
+      <a class="social-media-link" href="https://www.instagram.com/">
+        <svg width="48" height="48" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 600 600" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="matrix(1.01619,0,0,1.01619,44,43.8384)"><path d="M251.921,0.159C183.503,0.159 174.924,0.449 148.054,1.675C121.24,2.899 102.927,7.157 86.902,13.385C70.336,19.823 56.287,28.437 42.282,42.442C28.277,56.447 19.663,70.496 13.225,87.062C6.997,103.086 2.739,121.399 1.515,148.213C0.289,175.083 0,183.662 0,252.08C0,320.497 0.289,329.076 1.515,355.946C2.739,382.76 6.997,401.073 13.225,417.097C19.663,433.663 28.277,447.712 42.282,461.718C56.287,475.723 70.336,484.337 86.902,490.775C102.927,497.002 121.24,501.261 148.054,502.484C174.924,503.71 183.503,504 251.921,504C320.338,504 328.917,503.71 355.787,502.484C382.601,501.261 400.914,497.002 416.938,490.775C433.504,484.337 447.553,475.723 461.559,461.718C475.564,447.712 484.178,433.663 490.616,417.097C496.843,401.073 501.102,382.76 502.325,355.946C503.551,329.076 503.841,320.497 503.841,252.08C503.841,183.662 503.551,175.083 502.325,148.213C501.102,121.399 496.843,103.086 490.616,87.062C484.178,70.496 475.564,56.447 461.559,42.442C447.553,28.437 433.504,19.823 416.938,13.385C400.914,7.157 382.601,2.899 355.787,1.675C328.917,0.449 320.338,0.159 251.921,0.159ZM251.921,45.551C319.186,45.551 327.154,45.807 353.718,47.019C378.28,48.14 391.619,52.244 400.496,55.693C412.255,60.263 420.647,65.723 429.462,74.538C438.278,83.353 443.737,91.746 448.307,103.504C451.757,112.381 455.861,125.72 456.981,150.282C458.193,176.846 458.45,184.814 458.45,252.08C458.45,319.345 458.193,327.313 456.981,353.877C455.861,378.439 451.757,391.778 448.307,400.655C443.737,412.414 438.278,420.806 429.462,429.621C420.647,438.437 412.255,443.896 400.496,448.466C391.619,451.916 378.28,456.02 353.718,457.14C327.158,458.352 319.191,458.609 251.921,458.609C184.65,458.609 176.684,458.352 150.123,457.14C125.561,456.02 112.222,451.916 103.345,448.466C91.586,443.896 83.194,438.437 74.378,429.621C65.563,420.806 60.103,412.414 55.534,400.655C52.084,391.778 47.98,378.439 46.859,353.877C45.647,327.313 45.391,319.345 45.391,252.08C45.391,184.814 45.647,176.846 46.859,150.282C47.98,125.72 52.084,112.381 55.534,103.504C60.103,91.746 65.563,83.353 74.378,74.538C83.194,65.723 91.586,60.263 103.345,55.693C112.222,52.244 125.561,48.14 150.123,47.019C176.687,45.807 184.655,45.551 251.921,45.551Z" style="fill-rule:nonzero;"/><path d="M251.921,336.053C205.543,336.053 167.947,298.457 167.947,252.08C167.947,205.702 205.543,168.106 251.921,168.106C298.298,168.106 335.894,205.702 335.894,252.08C335.894,298.457 298.298,336.053 251.921,336.053ZM251.921,122.715C180.474,122.715 122.556,180.633 122.556,252.08C122.556,323.526 180.474,381.444 251.921,381.444C323.367,381.444 381.285,323.526 381.285,252.08C381.285,180.633 323.367,122.715 251.921,122.715Z" style="fill-rule:nonzero;"/><path d="M416.627,117.604C416.627,134.3 403.092,147.834 386.396,147.834C369.701,147.834 356.166,134.3 356.166,117.604C356.166,100.908 369.701,87.374 386.396,87.374C403.092,87.374 416.627,100.908 416.627,117.604Z" style="fill-rule:nonzero;"/></g></svg>
+      </a>
+      <a class="social-media-link" href="https://www.facebook.com/">
+        <svg width="48" height="48" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M374.244,285.825l14.105,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.116,0l0,-78.291c0,0 -36.407,-6.214 -71.213,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.541 32.798,3.865 49.709,3.865c16.911,0 33.511,-1.324 49.708,-3.865l0,-222.31l74.128,0Z" style="fill-rule:nonzero;"/></svg>
+      </a>
+      <p class="copyright">© Copyright 2024 Bento Bliss. All rights reserved.</p>
+    </div>
+  </footer>
+   </body>
+</html>
