@@ -8,6 +8,10 @@
 	color: var(--accent-red);
 }
 
+#main h3{
+	color: var(--accent-red);
+}
+
 .contact-text {
   font-weight: bold;
 }
@@ -113,13 +117,47 @@ footer .logo{
   font-size: 1.2rem;
 }
 
+.map-container{
+  display:flex;
+}
+
+.location{
+  flex:1;
+}
+
+.map{
+  flex:1;
+}
+
+.hours{
+  margin-top:3.5rem;
+}
+
+iframe{
+  width: 75%;
+  /* height: 35rem; */
+}
+
+
+
 @media screen and (max-width: 60em) {
+
+  p{
+    max-width: 100%;
+  }
+
+  .contact-el{
+    width: 100%;
+  }
   .contact-container {
     flex-direction: column; 
   }
 
+  .map-container{
+    flex-direction: column;
+  }
+
   .contact-form {
-  	margin-left: 10%;
   	margin-bottom: 30%;
   }
 
@@ -133,6 +171,10 @@ footer .logo{
 
   .submit-button{
     width:70%;
+  }
+
+  iframe{
+    width: 100%;
   }
 
 }

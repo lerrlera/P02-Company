@@ -3,6 +3,10 @@
   checkout styling for the style guide 
 */
 
+#main h3{
+	color: var(--accent-red);
+}
+
 .headings {
 	text-align: center;
 	padding-top: 6%;
@@ -64,6 +68,7 @@
 
 .checkout-text {
 	margin-left: 5%;
+	width: 100%;
 }
 
 .input-box {
