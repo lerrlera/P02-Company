@@ -146,7 +146,7 @@ iframe{
     max-width: 100%;
   }
 
-  .contact-el{
+  .contact-el, .contact-el-msg {
     width: 100%;
   }
   .contact-container {
@@ -170,11 +170,17 @@ iframe{
   }
 
   .submit-button{
-    width:70%;
+    max-width: 100%;
+    width:100%;
   }
 
   iframe{
     width: 100%;
+  }
+
+  .location{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
 }
