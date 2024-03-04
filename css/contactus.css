@@ -12,6 +12,9 @@
 	color: var(--accent-red);
 }
 
+#main {
+  margin-bottom: 5%;
+}
 .contact-text {
   font-weight: bold;
 }
