@@ -149,6 +149,7 @@ iframe{
   .contact-el, .contact-el-msg {
     width: 100%;
   }
+  
   .contact-container {
     flex-direction: column; 
   }
