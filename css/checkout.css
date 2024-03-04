@@ -3,9 +3,7 @@
   checkout styling for the style guide 
 */
 
-#main h3{
-	color: var(--accent-red);
-}
+
 
 .headings {
 	text-align: center;
@@ -15,7 +13,7 @@
 .checkout-container {
 	display: flex;
 	flex-wrap: wrap;
-	flex: 1 1 15em;
+	/* flex: 1 1 15em; */
 	margin-top: 15%;
 }
 
@@ -69,12 +67,18 @@
 .checkout-text {
 	margin-left: 5%;
 	width: 100%;
+	display: flex;
+}
+
+.checkout-text-el{
+	margin-top:1rem;
 }
 
 .input-box {
-	width: 65%;
+	width: 70%;
 	margin-bottom: 2%;
 }
+
 .checkout-box img {
   max-width: 100%;
   width: 40%;
@@ -108,17 +112,37 @@
 
 }
 @media screen and (max-width: 60em) {
+
+	#main{
+		margin: 3rem 2rem;
+	}
+
   .checkout-container {
     flex-direction: column; 
   }
 
-  .payment-form {
-  	margin-left: 10%;
-  	margin-bottom: 30%;
-  }
+	.checkout-text{
+		flex-direction: row;
+	}
 
-  .checkout-cart {
-  	margin-left: 10%;
+	.checkout-text-el{
+		flex: 1;
+	}
+
+	.submit-button{
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 4% 0;
+	}
+
+	.input-box{
+		width: 100%;
+	}
+
+  .payment-form {
+
+  	margin-bottom: 30%;
   }
 
   .checkout-box {
@@ -130,8 +154,7 @@
   }
 
   .checkout-box img {
-  	width: 50%;
-  	height: 50%;
+  	width: 100%;
   	max-height: 50%;
   }
 }
