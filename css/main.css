@@ -198,6 +198,12 @@ code {
    font-size: 1.6rem;
 }
 
+/* Citations */
+.citations {
+  padding-top: 10%;
+}
+
+
 /* Style Guide Nav */
 
 .main-nav-style {
