@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en-CA">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>About Us - Bento Bliss</title>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
   <!-- CSS -->
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/about.css" rel="stylesheet">
+
+  <!--jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,31 +19,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- This is a JS code for burger functionality -->
+  <!-- JavaScript -->
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Function to toggle the visibility of the mobile nav links
-    function toggleMobileNavLinks() {
-      var navLinks = document.querySelector('.mobile-nav-links');
-      navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+      // Function to toggle the visibility of the mobile nav links
+      function toggleMobileNavLinks() {
+        var navLinks = document.querySelector('.mobile-nav-links');
+        navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
+      }
+  
+      // Event listener for the burger button
+      document.querySelector('.burger-button').addEventListener('click', function() {
+        toggleMobileNavLinks();
+      });
+  
+      // Event listener for the close button
+      document.querySelector('.close-button').addEventListener('click', function() {
+        toggleMobileNavLinks();
+      });
+    });
+  </script>
 
-    // Event listener for the burger button
-    document.querySelector('.burger-button').addEventListener('click', function() {
-      toggleMobileNavLinks();
+  <script type="text/javascript">$(document).ready(function(){
+    $('.text-field-input').on('focus', function(){
+        $(this).closest('.review-msg').addClass('focused');
     });
 
-    // Event listener for the close button
-    document.querySelector('.close-button').addEventListener('click', function() {
-      toggleMobileNavLinks();
+    $('.text-field-input').on('blur', function(){
+        if ($(this).val() === '') {
+            $(this).closest('.review-msg').removeClass('focused');
+        }
     });
-  });
-</script>
+});</script>
 
 </head>
-
 <body>
-  <header>
+  <!-- header -->
+ <header>
     <div class="header-box">
       <a class="logo-link" href="home.html">
         <img class="logo" src="assets/img/logo.svg" alt="This is a logo of Bento Bliss">
@@ -72,27 +86,19 @@
       </div>
     </div>
   </header>
+
+
   
-  <section id="main">
-    <div class="breadcrumbs"><a class="breadcrumbs-link" href="home.html">Home </a><p> > </p><a class="breadcrumbs-link" href="#">About Us</a></div>
-    <div class="about-main">
-      <div class="about-content">
-        <h1 class="headings">About Us</h1>
-        <h2>Cakes for Any Occasion!</h2>
-        <p>Bento Bliss is a specialized cake shop that offers a unique selection of <a class="text-link" href="product.html">bento cakes</a> tailored for various occasions. We pride ourselves on providing a distinctive experience for customers seeking to commemorate special moments. Our team meticulously crafts aesthetically pleasing cakes using only the finest ingredients, offering a diverse array of fillings and personalized artwork to cater to the unique preferences and themes of each customer.</p>
-      </div>
-      <img src="assets/img/packaged.png" class="about-img" alt="Packaged cake">
-    </div>
+  <section id = "thank-you">
+    <h1 class="thank-you">Thank you for subscribing to Bento Bliss Newsletter!</h1>
+  
 
   </section>
 
-  <section id="newsletter">
-    <h3>Stay up to date!</h3>
-    <a href="thank-you-newsletter.html" class="submit-button">Subscribe to Our Newsletter</a>
-  </section>
-
   
-
+  </section>
+    
+ 
 
    <footer>
     <div class="footer-box">
@@ -130,5 +136,6 @@
       <p class="copyright">© Copyright 2024 Bento Bliss. All rights reserved.</p>
     </div>
   </footer>
-   </body>
+
+</body>
 </html>

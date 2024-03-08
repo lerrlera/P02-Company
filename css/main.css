@@ -159,7 +159,7 @@ code {
    cursor: pointer;
    display: none;
    border: none;
-   background-color: var(--white-cream);
+   background-color: transparent;
 }
 
 
@@ -258,6 +258,16 @@ code {
   background-color: rgb(179, 169, 142, 0.07);
   text-align: center;
 }
+
+/* Thank You Page */
+
+.thank-you {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--dark-beige);
+  padding: 17% 15%;
+}
+
 
 /* Footer */
 footer {
@@ -975,6 +985,7 @@ h2.brand-components {
     padding: 10% 10%;
   }
 
+
 }
 
 @media screen and (max-width: 45em) {
@@ -991,6 +1002,10 @@ h2.brand-components {
     margin-top: 25%;
   } 
 
+  .breadcrumbs {
+    margin-top: 30%;
+  }
+
   #newsletter .submit-button {
     width: 60%;
     margin-top: 5%;
@@ -999,6 +1014,11 @@ h2.brand-components {
 
   #newsletter {
     padding: 20% 10%;
+  }
+
+  .thank-you {
+    padding: 45% 5%;
+
   }
 
 }

@@ -44,7 +44,7 @@
 .banner-box {
 	display: flex;
 	flex-direction: column;
-	padding-left: 8%;
+	padding-left: 12%;
 }
 
 .shop-button .submit-button {
@@ -86,12 +86,35 @@
 
 .product-item img {
 	max-width: 100%;
-	width:98%;
+	width:95%;
 	border-radius: 8px;
+	margin-bottom: 4%;
 }
 
+.product-item {
+	text-align: center;
+}
+
+#catalogue p {
+	margin-top: 2%;
+}
+
+.product-link {
+	color: var(--accent-red);
+	text-decoration: none;
+	font-family: 'Josefin Slab', serif;
+  	font-weight: bold;
+  	font-size: 1.4rem;
+}
+
+.product-link:hover {
+	color: var(--dark-beige);
+
+}
+
+
 #catalogue .arrow-button {
-	margin-top: 1%;
+	margin-top: 5%;
 }
 
 #catalogue .arrow-button svg {
@@ -169,6 +192,19 @@
 		margin-top: 58%;
 	}
 
+	#main {
+		padding: 2% 6%;
+	}
+
+	.product-item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.product-link {
+		margin-bottom: 12%;
+	}
+
 	.home-headings h1 {
 		font-size: 2.8rem;
 
@@ -176,9 +212,6 @@
 		padding-top: 35%;
 	}
 
-	.product-display {
-		flex-direction: column;
-	}
 
 	#catalogue {
 		margin-top: 20%;
@@ -194,8 +227,12 @@
 		 width: 40%;
 	}
 
-  
+}
 
+@media screen and (max-width: 50em) {
+	.product-display {
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 45em) {
@@ -218,23 +255,63 @@
 		margin-left: 22%;
 		position: revert;
 		margin-top: 25%;
+		margin-bottom: 10%;
 	}
 
 	.home-headings h1 {
-		font-size:3.5rem;
+		font-size:3.3rem;
 		width: 100%;
-		padding-top: 25%;
+		padding-top: 35%;
 		padding-bottom: 2%;
 		padding-left: 0;
 		text-align: center;
 	}
 
+	.about-box h2 {
+		margin-bottom: 5%;
+	}
+
+	.about-box p {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.about-box {
+		padding: 15% 8%;
+	}
+
+	
+	#main {
+		padding: 1% 4%;
+	}
+
 	.shop-button {
 		text-align: center;
+		margin-top: 10%;
 	}
 
 	.shop-button .submit-button {
-		padding: 2% 25%;
+		padding: 4% 25%;
+	}
+
+	#catalogue h2 {
+		text-align: center;
+	}
+
+	#catalogue {
+		margin-top: 25%;
+		margin-bottom: 10%;
+	}
+
+	#catalogue p {
+		text-align: center;
+		margin-top: 6%;
+		margin-bottom: 8%;
+		max-width: 100%;
+	}
+
+	.product-item img {
+		width: 100%;
 	}
 
 	.event-box {
@@ -247,7 +324,7 @@
 
 	#events h2, #events-two h2 {
     	width: 100%;
-    	margin-top: 8%;
+    	margin-top: 15%;
 	}
 	.event-info p {
 		margin-top: 5%;
@@ -257,12 +334,14 @@
 
 	.v-day {
 		width: 100%;
+		margin-bottom: 17%;
 	}
   
 	.best-2024{
 		order:2;
 		width: 70%;
 		margin: auto;
+		margin-bottom: 17%;
 
 	}
 

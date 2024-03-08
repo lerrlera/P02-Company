@@ -113,12 +113,10 @@
 }
 @media screen and (max-width: 60em) {
 
-	#main{
-		margin: 3rem 2rem;
-	}
 
   .checkout-container {
     flex-direction: column; 
+    margin-top: 30%;
   }
 
 	.checkout-text{
