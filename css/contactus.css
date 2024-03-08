@@ -105,10 +105,7 @@ footer .logo{
 }
 
 .submit-button {
-  max-width: 35%;
-  width: 25%;
-  border: none;
-  text-align:center;
+  padding: 1.5% 10%;
 
 }
 
@@ -146,10 +143,10 @@ iframe{
 @media screen and (max-width: 60em) {
 
 .breadcrumbs {
-  margin-top: 30%;
+  margin-top: 15%;
 }
 #main h1 {
-  margin-top: 30%;
+  margin-top: 12%;
 }
   p{
     max-width: 100%;
@@ -168,7 +165,7 @@ iframe{
   }
 
   .contact-form {
-  	margin-bottom: 30%;
+  	margin-bottom: 10%;
   }
 
   .contact-box {
@@ -182,7 +179,7 @@ iframe{
   .submit-button{
     max-width: 100%;
     width:100%;
-    padding: 4% 15%;
+    padding: 2% 15%;
   }
 
   iframe{

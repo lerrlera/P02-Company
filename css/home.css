@@ -88,7 +88,7 @@
 	max-width: 100%;
 	width:95%;
 	border-radius: 8px;
-	margin-bottom: 4%;
+	margin-bottom: 2%;
 }
 
 .product-item {
@@ -102,14 +102,17 @@
 .product-link {
 	color: var(--accent-red);
 	text-decoration: none;
-	font-family: 'Josefin Slab', serif;
-  	font-weight: bold;
-  	font-size: 1.4rem;
+
 }
 
-.product-link:hover {
-	color: var(--dark-beige);
+.product-link h4 {
+	color: var(--accent-red);
+	text-decoration: none;
+  
+}
 
+.product-link:hover h4 {
+	color: var(--dark-beige);
 }
 
 
