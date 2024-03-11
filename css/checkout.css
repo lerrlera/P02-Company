@@ -13,46 +13,37 @@
 .checkout-container {
 	display: flex;
 	flex-wrap: wrap;
-	/* flex: 1 1 15em; */
-	margin-top: 15%;
+	margin-top: 7%;
 }
 
 #checkout {
 	color: var(--accent-red);
 }
 
+.flex-left{
+
+	flex: 1;
+}
+
 .payment-form {
 	flex: 1;
+	margin-bottom: 7%;
 }
 
 .payment-form h3 {
 	margin-top: 0;
 }
 
-.checkout-cart {
+.flex-right {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 }
 
-/*
-.payment-el label {
-	font-size: 1rem;
-	margin-bottom: 1%;
-}*/
-
-.checkout-cart .payment-text {
-	max-width: 85%;
+.flex-right .payment-text {
+	max-width: 100%;
 	margin-bottom: 4%;
 }
-
-/*
-.payment-box .payment-el input {
-	max-width: 80%;
-	width: 70%;
-	height: 30px;
-	margin-bottom: 2%;
-}*/
 
 .method {
 	margin-top: 4%;
@@ -64,14 +55,23 @@
 	margin-bottom: 4%;
 }
 
+.billing-address{
+	display: flex;
+	flex-direction: row;
+	max-width: 70%;
+}
+
+
 .checkout-text {
 	margin-left: 5%;
 	width: 100%;
 	display: flex;
+	flex-direction: row;
 }
 
 .checkout-text-el{
-	margin-top:1rem;
+	flex:1;
+	margin-bottom: 1.5rem;
 }
 
 .input-box {
@@ -79,10 +79,14 @@
 	margin-bottom: 2%;
 }
 
+.checkout-box-container{
+	margin-top: 7%;
+}
+
 .checkout-box img {
-  max-width: 100%;
-  width: 40%;
-  height: auto;
+  width: 5rem;
+	height: 5rem;
+	object-fit: cover;
   border-radius: 5px;
 }
 
@@ -91,26 +95,149 @@
 	text-align: right;
 }
 
+/* Quantity Input CSS */
+/* Based on https://codepen.io/happy2je/pen/poByVWM */
+
+.quantity {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.qty-input {
+	color: #000;
+	background: white;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.qty-input .product-qty,
+.qty-input .qty-count {
+	background: transparent;
+	color: inherit;
+	font-weight: bold;
+	font-size: inherit;
+	border: none;
+	display: inline-block;
+	min-width: 0;
+	height: 1.5rem;
+	line-height: 1;
+}
+
+.qty-input .product-qty:focus,
+.qty-input .qty-count:focus {
+	outline: none;
+}
+
+.qty-input .product-qty {
+	width: 30px;
+	min-width: 0;
+	display: inline-block;
+	text-align: center;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+
+.qty-input .product-qty::-webkit-outer-spin-button,
+.qty-input .product-qty::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+.qty-input .qty-count {
+	padding: 0;
+	cursor: pointer;
+	width: 2rem;
+	font-size: 0.5em;
+	text-indent: -100px;
+	overflow: hidden;
+	position: relative;
+}
+
+.qty-input .qty-count:before,
+.qty-input .qty-count:after {
+	content: "";
+	height: 1.5px;
+	width: 7px;
+	position: absolute;
+	display: block;
+	background: black;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.qty-input .qty-count--minus {
+	border-right: 1px solid #e2e2e2;
+}
+
+.qty-input .qty-count--add {
+	border-left: 1px solid #e2e2e2;
+}
+
+.qty-input .qty-count--add:after {
+	transform: rotate(90deg);
+}
+
+.qty-input .qty-count:disabled {
+	color: gray;
+	background: #f2f2f2;
+	cursor: not-allowed;
+	border-color: transparent;
+}
+
+.qty-input .qty-count:disabled:before,
+.qty-input .qty-count:disabled:after {
+	background: gray;
+}
+
+.qty-input {
+	font-size: 0.7rem;
+	border-radius: 4px;
+	border-style: solid;
+	border-color: lightgray;
+	border-width: 0.005rem;
+	transform: scale(1.5);
+}
+
+.total-price-container{
+	margin-top: 3rem;
+}
+
+.total-price{
+	display: flex;
+	flex-direction: row;
+}
+
+.total-price-el{
+	flex:1;
+	text-align:end;
+	margin-bottom: 0.5rem;
+}
+
+.total-price h4{
+	margin: 0;
+}
+
 @media screen and (max-width: 80em) {
-  .checkout-box img {
-  	width: 40%;
-  	height: 40%;
-  	max-height: 50%;
-  }
 
   #main {
   	 padding: 3rem 3rem;
   }
-}
 
-@media screen and (max-width: 70em) {
-  .checkout-box img {
-  	width: 30%;
-  	height: 30%;
-  	max-height: 50%;
-  }
+	.biling-address{
+		max-width: 100%;
+	}
 
 }
+
 @media screen and (max-width: 60em) {
 
 
@@ -119,13 +246,11 @@
     margin-top: 30%;
   }
 
-	.checkout-text{
-		flex-direction: row;
+
+	.billing-address{
+		max-width: 100%;
 	}
 
-	.checkout-text-el{
-		flex: 1;
-	}
 
 	.submit-button{
 		display: block;
@@ -138,21 +263,8 @@
 		width: 100%;
 	}
 
-  .payment-form {
-
-  	margin-bottom: 30%;
-  }
-
-  .checkout-box {
-  	flex-direction: column;
-  }
-
   .checkout-text {
   	margin-left: 0;
   }
 
-  .checkout-box img {
-  	width: 100%;
-  	max-height: 50%;
-  }
 }
