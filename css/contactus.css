@@ -12,6 +12,10 @@
 	color: var(--accent-red);
 }
 
+#map {
+  padding: 4rem 7rem;
+}
+
 #main {
   margin-bottom: 5%;
 }
@@ -102,11 +106,6 @@
 
 footer .logo{
 	max-height: none;
-}
-
-.submit-button {
-  padding: 1.5% 10%;
-
 }
 
 .submit-button:hover{
