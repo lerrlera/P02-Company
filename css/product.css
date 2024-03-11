@@ -1,6 +1,5 @@
 /*
-  STYLE GUIDE STYLING 
-  product styling for the product shop page 
+  Styling for the product shop page 
 */
 
 /* Banner */
@@ -12,6 +11,7 @@
 
 h1.headings {
   text-align: center;
+  margin-bottom: 8%;
 }
 
 #shop {
