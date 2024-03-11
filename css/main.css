@@ -255,8 +255,9 @@ code {
 }
 
 #newsletter .submit-button {
-  margin-top: 2%;
-  width: 20%;
+  margin-top: 6%;
+  padding: 1rem 3.5rem;
+
 }
 
 #newsletter {
@@ -451,11 +452,11 @@ footer .logo {
 
 /* Styling for the submit button */
 .submit-button {
-  margin-top: 5%;
-  width: 8%;
-  padding: 1% 5%;
+  border-width:0;
+  padding: 1rem 2.5rem;
   background-color: var(--accent-red);
   border-radius: 5px;
+  font-size: 1.1rem;
   text-decoration: none;
   color: var(--white-cream);
   transition: background-color 0.5s ease;
@@ -463,14 +464,14 @@ footer .logo {
 
 .submit-button:hover, .submit-button:focus {
   text-decoration: none;
+  cursor: pointer;
   background-color: var(--dark-beige);
 }
 
 /* Styling for the reset button */
 .reset-button {
-  margin-top: 5%;
-  width: 8%;
-  padding: 1% 5%;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
   border: 1px solid var(--accent-red);
   border-radius: 5px;
   text-decoration: none;
@@ -780,11 +781,6 @@ h4.headings {
   margin-bottom: 3%;
 }
 
-.product-buttons .submit-button {
-  width: 17%;
-  margin-top: 15%;
-  padding: 1.2% 4%;
-}
 
 
 .product-buttons {
@@ -951,9 +947,6 @@ h2.brand-components {
     font-size: 0.9rem;
   }
 
-   #newsletter .submit-button {
-    width: 30%;
-  }
 }
 @media screen and (max-width: 65em) {
   .footer-box {
@@ -981,9 +974,6 @@ h2.brand-components {
     margin-bottom: 8%;
   }
 
-  #newsletter .submit-button {
-    width: 30%;
-  }
 }
 
 @media screen and (max-width: 60em) {
@@ -998,9 +988,7 @@ h2.brand-components {
   .copyright {
     display: none;
   }
-  #newsletter .submit-button {
-    width: 40%;
-  }
+
 
   #newsletter {
     padding: 10% 10%;
@@ -1027,11 +1015,7 @@ h2.brand-components {
     margin-top: 30%;
   }
 
-  #newsletter .submit-button {
-    width: 60%;
-    margin-top: 5%;
-    padding: 3% 6%;
-  }
+
 
   #newsletter {
     padding: 20% 10%;

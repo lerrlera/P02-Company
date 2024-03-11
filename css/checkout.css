@@ -91,8 +91,17 @@
 }
 
 .checkout-button {
-	margin-top: 10%;
-	text-align: right;
+	margin-top: 7%;
+	text-align: center;
+}
+
+.checkout-button a{
+	text-decoration: none;
+}
+
+.inputCity, .inputProvince{
+	box-sizing: border-box;
+	margin-right: 2rem;
 }
 
 /* Quantity Input CSS */

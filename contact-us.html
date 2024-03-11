@@ -29,6 +29,7 @@
         var navLinks = document.querySelector('.mobile-nav-links');
         navLinks.style.display = (navLinks.style.display == 'none') ? 'block' : 'none';
       }
+
   
       // Event listener for the burger button
       document.querySelector('.burger-button').addEventListener('click', function() {
@@ -120,7 +121,7 @@
 
       <div class="contact-form">
         <h3>Contact Form</h3>
-        <form>
+        <form action="thank-you-contact.html">
           <div class="contact-box">
           <!-- name -->
             <div class="contact-el">
@@ -140,9 +141,12 @@
               <input class="text-field-input" type="text" id="message">
             </div>
 
+            <!-- submit button -->
             <div class="contact-button">
-              <a class="submit-button" href="thank-you-contact.html">Submit</a>
-            </div>
+                <input type="submit" class="submit-button" value="Submit">
+              </div>
+
+
 
           </div>
         </form>
@@ -184,8 +188,11 @@
 
     <section id="newsletter">
     <h3>Stay up to date!</h3>
-    <a href="thank-you-newsletter.html" class="submit-button">Subscribe to Our Newsletter</a>
-  </section>
+    <!-- newsletter submit button -->
+    <a href="thank-you-newsletter.html">
+      <input type="submit" class="submit-button" value="Subscribe to Our Newsletter">
+    </a>
+    </section>
 
   
  <footer>
