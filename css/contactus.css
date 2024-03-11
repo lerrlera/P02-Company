@@ -1,3 +1,5 @@
+/* Contact Us CSS */
+
 .headings {
   /* contact us heading */
 	text-align: center;
@@ -19,6 +21,7 @@
 #main {
   margin-bottom: 5%;
 }
+
 .contact-text {
   font-weight: bold;
 }
@@ -28,7 +31,6 @@
 	flex-wrap: wrap;
 	flex: 1 1 15em;
 }
-
 
 .contact-form {
 	flex: 1;
@@ -96,7 +98,6 @@
 .contact-el-msg input {
   width: 100%;
   padding: 10%;
- 
 }
 
 .checkout-cart .contact-text {
@@ -134,20 +135,17 @@ footer .logo{
 
 iframe{
   width: 75%;
-  /* height: 35rem; */
 }
-
 
 
 @media screen and (max-width: 60em) {
-
-.breadcrumbs {
-  margin-top: 15%;
-}
-#main h1 {
+  .breadcrumbs {
+    margin-top: 15%;
+  }
+  #main h1 {
   margin-top: 12%;
-}
-  p{
+  }
+  p {
     max-width: 100%;
   }
 
@@ -189,6 +187,5 @@ iframe{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
   }
-
 }
 

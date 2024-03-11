@@ -16,7 +16,6 @@
 	max-width: 85%;
 }
 
-
 .about-main {
 	display: flex;
 	margin-bottom: 8%;
@@ -32,73 +31,53 @@
 	margin-top: 2%;
 }
 
-
-
 @media screen and (max-width: 70em) {
-
-
 	#main {
 		padding: 4% 4%;
 	}
 	.about-main p {
 	max-width: 75%;
-}
+	}
 }
 
 @media screen and (max-width: 65em) {
 
-.about-main {
+	.about-main {
 		flex-direction: column;
 		align-items: center;
 	}
-
 	.about-content {
 		margin: 0;
 	}
-
 	.about-main {
 		margin-top: 10%;
 		margin-bottom: 7%;
 	}
-
 	.about-main p {
 		font-size: 1rem;
 		max-width: 100%;
-				margin-bottom: 7%;
-
+		margin-bottom: 7%;
 	}
-
 	.about-main h1 {
 		margin-top: 15%;
 	}
-
 	.about-img {
 		width: 70%;
 		margin: 4% auto;
 	}
-
 }
 
 @media screen and (max-width: 55em) {
 
-
 	.about-main h1 {
 		margin-top: 25%;
 	}
-
-	
 }
 
 @media screen and (max-width: 45em) {
-
-	
 
 	.about-main h1, h2 {
 		text-align: center;
 		margin-bottom: 8%;
 	}
-
-
-
-
 }
